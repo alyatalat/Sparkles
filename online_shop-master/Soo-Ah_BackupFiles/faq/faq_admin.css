@@ -1,0 +1,79 @@
+
+#main{
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 100%;
+}
+
+#main h1{
+    margin-bottom: 0px;
+    margin-top: 25px;
+    font: bold 30px/60px "Ubuntu", sans-serif;
+    color: #333333;
+    border: none;
+}
+
+#seperator{
+    width: 90%;
+    height: 5px;
+    background-color: #333333;
+    display: block;
+}
+
+#main table{
+    margin-top: 25px;
+    width: 90%;
+    table-layout: fixed;
+}
+#main table th{
+    font: bold 14px/19px "Ubuntu", sans-serif;
+    text-transform: uppercase;
+    color: #333333;
+}
+#main .faq_table_title{
+     font: bold 20px/19px "Ubuntu", sans-serif;
+     color: #333333;
+ }
+#main .faq_table_title span{
+    margin-right: 20px;
+}
+#main td, #main th{
+    padding: 10px 15px;
+    border: 1px solid #e4e4e4;
+}
+
+#main table .first_row{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding-bottom: 20px;
+}
+
+#main table .faq_link a, #main table a.faq_link {
+    color: #3E5EB3;
+    text-decoration: none;
+}
+
+#main table .faq_link:hover a, #main table a.faq_link:hover{
+    color: #223976;
+    text-decoration: none !important;
+}
+
+#main td input{
+    width: 100%;
+}
+
+#main td .cancel_btn{
+    background-image: none !important;
+    background-color: white;
+    padding: 3px 8px;
+    font-size: 13px;
+}
+#main td.err_message{
+    border-top:none;
+    border-right: none;
+    border-bottom: none;
+    color: red;
+}
+
+

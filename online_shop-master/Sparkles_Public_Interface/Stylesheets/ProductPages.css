@@ -1,0 +1,105 @@
+.header-image{
+    background: url(AdobeStock_75573955_WM.jpeg) no-repeat center center;
+    background-size: cover;
+    opacity: 0.6;
+    height: 20rem;
+}
+
+.jewelry-header-image{
+    background: url(AdobeStock_97789847_WM.jpeg) no-repeat center center;
+    background-size: cover;
+    opacity: 0.6;
+    height: 20rem;
+}
+
+.shoes-header-image{
+    background: url(AdobeStock_87426995_WM.jpeg) no-repeat center center;
+    background-size: cover;
+    opacity: 0.6;
+    height: 20rem;
+}
+
+.sale-header-image{
+    background: url(AdobeStock_92029748_WM.jpeg) no-repeat center center;
+    background-size: cover;
+    opacity: 0.6;
+    height: 20rem;
+}
+
+
+.category-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 700;
+    color: black;
+    font-family: "Ubuntu",sans-serif;
+    line-height: 44px;
+    padding: 4rem;
+}
+
+.productlist{
+    display:inline-block;
+    height: 250px;
+    width: 250px;
+    padding: 2rem;
+
+}
+
+.productlist li{
+    list-style:none;
+}
+
+/*#wrapper{
+   !* height: auto;*!
+!*    background: black;*!
+}
+#sidebar-wrapper{
+!*    background-color: black;*!
+!*    height: 100%;*!
+    border: solid grey thin;
+}
+
+#page-content-wrapper{
+!*    height:100%;*!
+!*    margin-bottom: 5rem;*!
+    background: white;
+ !*   border-top: solid grey thin;*!
+!*    text-align: center;*!
+}*/
+
+.product-display{
+        text-align: left;
+}
+.sidebar-nav {
+    list-style: none;
+
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #999999;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #000;
+    background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 770px){
+    #sidebar-wrapper{
+        display:none;
+    }
+}

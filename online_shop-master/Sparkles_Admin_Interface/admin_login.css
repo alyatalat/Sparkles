@@ -1,0 +1,105 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500,500italic,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic);
+
+html{
+    box-sizing: border-box;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+
+
+#header{
+	height: 65px;
+	background-color: rgb(50, 50, 50);
+	width: 100%;
+}
+
+.logo{
+	text-align: center;
+}
+
+.logo a img{
+	width: 110px;
+	margin-top: 6px;
+}
+
+.login-box{
+	margin-top: 170px;
+	margin-bottom: 100px;
+}
+
+.login-box h1{
+	font-family: "Open Sans",sans-serif;
+	color: rgb(50, 50, 50);
+	font-size: 26px;
+	font-weight: 400;
+	line-height: 36px;
+	text-align: center;
+}
+
+#additionalNote{
+	margin-top: 20px;
+	font-family: "Open Sans",sans-serif;
+	font-size: 14px;
+	line-height: 20px;
+	color: rgb(153, 153, 164);
+}
+
+#login-form{
+	text-align: center;
+}
+
+#login, #password{
+	color: rgb(85, 85, 85);
+	display: inline-block;
+	font-family: "Open Sans",sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	height: 41px !important;
+	line-height: 21px;
+	width: 281px;
+	margin-top: 20px;
+}
+
+button{
+	background-color: rgb(240, 173, 78);
+	cursor: pointer;
+	height: 45px;
+	line-height: 18.2px;
+	min-width: 165px;
+	text-align: center;
+	text-decoration: none;
+	margin-top: 30px !important;
+}
+
+button:hover{
+	background-color: rgb(238, 162, 54);
+}
+
+button span{
+	font-family: "Open Sans",sans-serif;
+	font-size: 17px;
+	vertical-align: middle;
+	font-weight: 400;
+	color: rgb(255, 255, 255);
+}
+
+
+#copyright{
+	border-top: 3px solid #f1f1f1;
+	height: 80px;
+	display: inline-block;
+	width: 100%;
+	margin-top: 90px;
+}
+#copyright p{
+	color: #888888;
+	font: normal 13px/19px "Ubuntu", sans-serif;
+	padding: 30px;
+	padding-left: 30px;
+}
+
+
