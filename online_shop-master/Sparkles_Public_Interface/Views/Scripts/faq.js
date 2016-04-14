@@ -1,3 +1,4 @@
+// Author: Soo-Ah Jung
 
 $(document).ready(function(){
     $("h3 span").click(function(){

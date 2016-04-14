@@ -1,3 +1,8 @@
+/*
+    The stylesheet for the public interface of Sparkles Shop Project
+    Author: Soo-Ah Jung
+*/
+
 @import url(https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500,500italic,700,700italic);
 
 
@@ -255,19 +260,19 @@ background-color: #191919;
 }
 
 #part1:hover{
-    background-image: url(AdobeStock_75573955_WM.jpeg);
+    background-image: url(../Images/AdobeStock_75573955_WM.jpeg);
 }
 
 #part2:hover{
-    background-image: url(AdobeStock_97789847_WM.jpeg);
+    background-image: url(../Images/AdobeStock_97789847_WM.jpeg);
 }
 
 #part3:hover{
-    background-image: url(AdobeStock_87426995_WM.jpeg);
+    background-image: url(../Images/AdobeStock_87426995_WM.jpeg);
 }
 
 #part4:hover{
-    background-image: url(AdobeStock_92029748_WM.jpeg);
+    background-image: url(../Images/AdobeStock_92029748_WM.jpeg);
 }
 
 #part1, #part2, #part3, #part4 {
@@ -287,7 +292,6 @@ background-color: #191919;
     border-top: black solid 3px;
     padding-left: 50px;
     padding-right: 50px;
-	margin-top: 40px;
 }
 
 .footer-container ul{
@@ -423,19 +427,6 @@ background-color: #191919;
 	font-size: 20px;
 	cursor: pointer;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
  
 @media screen and (min-width: 600px) { 
   
@@ -479,10 +470,6 @@ background-color: #191919;
 	    padding-top: 0.5%;
 	    padding-bottom: 0.5%;
 	}
-
-
-
-
 }
 
 /*********** mobile size ***********/
@@ -624,18 +611,8 @@ background-color: #191919;
     font-family: "Ubuntu",sans-serif;
     line-height: 44px;
 }
-
-   
    .top-level-menu-li{
    	display: none;
 }
 
-
-
 }
-
-
-
-
-
-

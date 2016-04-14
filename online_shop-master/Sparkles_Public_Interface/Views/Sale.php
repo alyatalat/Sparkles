@@ -1,6 +1,10 @@
-<?php
-require_once('Alya Admin Features/Controller/database.php');
+<!--
+    Sale Category of Products
+    Author: Alya Talat
+-->
 
+<?php
+require_once('../Controller/database.php');
 // Get products for selected category
 $query = "SELECT * FROM products
               WHERE Sale = 'Yes'
@@ -10,7 +14,7 @@ $products = $db->query($query);
 <div class="container-fluid">
     <div class="row">
         <?php
-        require_once("header.html");
+        require_once("../Layout/header.html");
         ?>
     </div>
 </div>
@@ -49,7 +53,7 @@ $products = $db->query($query);
                     <a href="#">Sale</a>
                 </li>
                 <li>
-                    <a href="#">Feedback</a>
+                    <a href="Feedback/Views/Feedback.php">Feedback</a>
                 </li>
             </ul>
         </div>
@@ -60,7 +64,7 @@ $products = $db->query($query);
                 <div class="row">
                     <div class="nav">
                         <ul class="breadcrumb">
-                            <li><a href="homepage.php">Home</a></li>
+                            <li><a href="HomeIndex.php">Home</a></li>
                             <li><a href="Sale.php">Sale</a></li>
                             <li class="active">Products</li>
                         </ul>
@@ -73,9 +77,9 @@ $products = $db->query($query);
                 <div class="row product-display">
                     <?php foreach ($products as $product) : ?>
                         <ul class="productlist">
-                            <li><?php echo '<img src="'. $product['Image'] .'" alt="product image" width="150" height="150"/>'; ?></li>
+                            <li><?php echo '<img src="../'. $product['Image'] .'" alt="product image" width="150" height="150"/>'; ?></li>
                             <li><?php echo $product['Product_Title']; ?></li>
-                            <!--  <li><?php /*echo $product['Price_Id']; */?><</li>-->
+                            <li><?php echo $product['Price_Id']; ?></li>
                             <li><button>Add To Cart</button></li>
                             <li><a href="#">Add To Wishlist</a></li>
                             <li><a href="#">Rate this item</a></li>
@@ -90,7 +94,7 @@ $products = $db->query($query);
 <div class="container-fluid">
     <div class="row">
         <?php
-        require_once("footer.html");
+        require_once("../Layout/footer.html");
         ?>
     </div>
 </div>

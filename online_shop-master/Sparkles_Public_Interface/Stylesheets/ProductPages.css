@@ -1,26 +1,31 @@
+/*
+    Stylesheet for the Categories Pages of Apparel, Shoes, Jewelry and Sale.
+    Author: Alya Talat
+*/
+
 .header-image{
-    background: url(AdobeStock_75573955_WM.jpeg) no-repeat center center;
+    background: url(../Images/AdobeStock_75573955_WM.jpeg) no-repeat center center;
     background-size: cover;
     opacity: 0.6;
     height: 20rem;
 }
 
 .jewelry-header-image{
-    background: url(AdobeStock_97789847_WM.jpeg) no-repeat center center;
+    background: url(../Images/AdobeStock_97789847_WM.jpeg) no-repeat center center;
     background-size: cover;
     opacity: 0.6;
     height: 20rem;
 }
 
 .shoes-header-image{
-    background: url(AdobeStock_87426995_WM.jpeg) no-repeat center center;
+    background: url(../Images/AdobeStock_87426995_WM.jpeg) no-repeat center center;
     background-size: cover;
     opacity: 0.6;
     height: 20rem;
 }
 
 .sale-header-image{
-    background: url(AdobeStock_92029748_WM.jpeg) no-repeat center center;
+    background: url(../Images/AdobeStock_92029748_WM.jpeg) no-repeat center center;
     background-size: cover;
     opacity: 0.6;
     height: 20rem;
