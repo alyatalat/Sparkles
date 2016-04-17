@@ -6,11 +6,27 @@
 <?php
 require_once('../Controller/database.php');
 
+
+if(isset($_GET['word'])){
+    $searchWord = $_GET['word'];
+
+    $query = "SELECT * FROM products WHERE Product_Title = :searchWord AND Category LIKE CONCAT('Jewelry');";
+    $statement = $db->prepare($query);
+    $statement -> bindValue(':searchWord', $searchWord);
+    $statement->execute();
+    $products = $statement->fetchAll();
+    $statement->closeCursor();
+}
+
+else {
+
+
 // Get products for selected category
-$query = "SELECT * FROM products
+    $query = "SELECT * FROM products
               WHERE Category='Jewelry'
               ORDER BY Product_Id";
-$products = $db->query($query);
+    $products = $db->query($query);
+}
 ?>
 <div class="container-fluid">
     <div class="row">

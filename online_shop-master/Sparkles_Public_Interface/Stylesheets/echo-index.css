@@ -62,6 +62,7 @@ html{
 
 
 
+
 .top_menu menu{
 	list-style: none;
 }
@@ -292,6 +293,7 @@ background-color: #191919;
     border-top: black solid 3px;
     padding-left: 50px;
     padding-right: 50px;
+	margin-top: 50px;
 }
 
 .footer-container ul{
@@ -325,6 +327,7 @@ background-color: #191919;
 
 .footer {
     text-align: center;
+
 }
 
 

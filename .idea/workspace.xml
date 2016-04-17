@@ -22,137 +22,121 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="faq_admin.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/online_shop-master/Soo-Ah_Admin_Features/FAQ/Views/faq_admin.php">
+      <file leaf-file-name="header.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/online_shop-master/Sparkles_Public_Interface/Layout/header.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="16.5">
-              <caret line="2" column="58" selection-start-line="2" selection-start-column="58" selection-end-line="2" selection-end-column="58" />
+            <state vertical-scroll-proportion="-76.34615">
+              <caret line="155" column="0" selection-start-line="155" selection-start-column="0" selection-end-line="155" selection-end-column="0" />
               <folding>
-                <marker date="1460278073019" expanded="true" signature="222:276" placeholder="SELECT * FRO... faq_category" />
+                <element signature="n#style#0;n#input#0;n#div#0;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="delete_faq_category.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/online_shop-master/Soo-Ah_Admin_Features/FAQ/Controller/delete_faq_category.php">
+      <file leaf-file-name="echo-index.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/online_shop-master/Sparkles_Public_Interface/Stylesheets/echo-index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.461538">
-              <caret line="34" column="39" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />
-              <folding>
-                <marker date="1460278072972" expanded="true" signature="153:213" placeholder="DELETE FROM " />
-                <marker date="1460278072972" expanded="true" signature="443:497" placeholder="SELECT * FRO... faq_category" />
-                <marker date="1460278072972" expanded="true" signature="820:964" placeholder="UPDATE faq_c... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="edit_faq_category.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/online_shop-master/Soo-Ah_Admin_Features/FAQ/Views/edit_faq_category.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.2909093">
-              <caret line="127" column="158" selection-start-line="127" selection-start-column="158" selection-end-line="127" selection-end-column="158" />
-              <folding>
-                <marker date="1460278699987" expanded="true" signature="302:364" placeholder="SELECT * FRO... faq_category" />
-                <marker date="1460278699987" expanded="true" signature="1621:1675" placeholder="SELECT * FRO... faq_category" />
-                <marker date="1460278699987" expanded="true" signature="3248:3343" placeholder="SELECT * FRO... faq_question" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="delete_faq_question.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/online_shop-master/Soo-Ah_Admin_Features/FAQ/Controller/delete_faq_question.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.384615">
-              <caret line="37" column="32" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
-              <folding>
-                <marker date="1460278700025" expanded="true" signature="153:213" placeholder="DELETE FROM " />
-                <marker date="1460278700025" expanded="true" signature="383:479" placeholder="SELECT * FRO... faq_question" />
-                <marker date="1460278700025" expanded="true" signature="771:955" placeholder="UPDATE faq_q... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="edit_faq_question.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/online_shop-master/Soo-Ah_Admin_Features/FAQ/Views/edit_faq_question.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.846153">
-              <caret line="135" column="21" selection-start-line="135" selection-start-column="21" selection-end-line="135" selection-end-column="21" />
-              <folding>
-                <marker date="1460278822165" expanded="true" signature="422:479" placeholder="SELECT * FRO... faq_question" />
-                <marker date="1460278822165" expanded="true" signature="2352:2448" placeholder="SELECT * FRO... faq_question" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="edit_question.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/online_shop-master/Soo-Ah_Admin_Features/FAQ/Controller/edit_question.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.51166964">
-              <caret line="82" column="13" selection-start-line="82" selection-start-column="13" selection-end-line="82" selection-end-column="13" />
-              <folding>
-                <marker date="1460278920801" expanded="true" signature="683:879" placeholder="UPDATE faq_q... " />
-                <marker date="1460278920801" expanded="true" signature="1163:1259" placeholder="SELECT * FRO... faq_question" />
-                <marker date="1460278920801" expanded="true" signature="1739:1837" placeholder="UPDATE faq_q... " />
-                <marker date="1460278920801" expanded="true" signature="2406:2504" placeholder="UPDATE faq_q... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="add_faq_question.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/online_shop-master/Soo-Ah_Admin_Features/FAQ/Views/add_faq_question.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.846153">
-              <caret line="168" column="21" selection-start-line="168" selection-start-column="21" selection-end-line="168" selection-end-column="21" />
-              <folding>
-                <element signature="e#3465#3493#0#HTML" expanded="true" />
-                <marker date="1460278573594" expanded="true" signature="244:340" placeholder="SELECT * FRO... faq_question" />
-                <marker date="1460278573594" expanded="true" signature="1442:1538" placeholder="UPDATE faq_q... " />
-                <marker date="1460278573594" expanded="true" signature="2332:2574" placeholder="INSERT INTO faq_question... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="edit_category.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/online_shop-master/Soo-Ah_Admin_Features/FAQ/Controller/edit_category.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.230769">
-              <caret line="8" column="57" selection-start-line="8" selection-start-column="57" selection-end-line="8" selection-end-column="57" />
-              <folding>
-                <marker date="1460278351765" expanded="true" signature="434:580" placeholder="UPDATE faq_c... " />
-                <marker date="1460278351765" expanded="true" signature="849:903" placeholder="SELECT * FRO... faq_category" />
-                <marker date="1460278351765" expanded="true" signature="1361:1459" placeholder="UPDATE faq_c... " />
-                <marker date="1460278351765" expanded="true" signature="2082:2180" placeholder="UPDATE faq_c... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="admin.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/online_shop-master/Soo-Ah_Admin_Features/FAQ/Views/Layout/Style/admin.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.109091">
-              <caret line="77" column="20" selection-start-line="77" selection-start-column="20" selection-end-line="77" selection-end-column="20" />
+            <state vertical-scroll-proportion="-3.6226416">
+              <caret line="295" column="21" selection-start-line="295" selection-start-column="21" selection-end-line="295" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="add_faq_category.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/online_shop-master/Soo-Ah_Admin_Features/FAQ/Views/add_faq_category.php">
+      <file leaf-file-name="HomeIndex.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/online_shop-master/Sparkles_Public_Interface/Views/HomeIndex.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.692307">
-              <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
+            <state vertical-scroll-proportion="-24.846153">
+              <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="livesearch.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/online_shop-master/Sparkles_Public_Interface/Views/livesearch.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.6947935">
+              <caret line="33" column="47" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="47" />
               <folding>
-                <marker date="1460277935935" expanded="true" signature="206:260" placeholder="SELECT * FRO... faq_category" />
-                <marker date="1460277935935" expanded="true" signature="1222:1318" placeholder="UPDATE faq_c... " />
-                <marker date="1460277935935" expanded="true" signature="2256:2427" placeholder="INSERT INTO faq_category... " />
+                <marker date="1460857923858" expanded="true" signature="122:193" placeholder="SELECT * FRO... products" />
+                <marker date="1460857923858" expanded="true" signature="434:448" placeholder="..." />
+                <marker date="1460857923858" expanded="true" signature="571:599" placeholder="..." />
+                <marker date="1460857923858" expanded="true" signature="816:827" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="homepage.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/online_shop-master/Sparkles_Public_Interface/Views/homepage.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-17.5">
+              <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SearchError.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/online_shop-master/Sparkles_Public_Interface/Views/SearchError.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-19.615385">
+              <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Jewelry.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/online_shop-master/Sparkles_Public_Interface/Views/Jewelry.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.8846154">
+              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="20" selection-end-column="6" />
+              <folding>
+                <marker date="1460856443194" expanded="true" signature="192:284" placeholder="SELECT * FRO... products" />
+                <marker date="1460856443194" expanded="true" signature="546:641" placeholder="SELECT * FRO... products" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Shoes.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/online_shop-master/Sparkles_Public_Interface/Views/Shoes.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.1923075">
+              <caret line="11" column="102" selection-start-line="11" selection-start-column="102" selection-end-line="11" selection-end-column="102" />
+              <folding>
+                <marker date="1460856483880" expanded="true" signature="189:279" placeholder="SELECT * FRO... products" />
+                <marker date="1460856483880" expanded="true" signature="541:634" placeholder="SELECT * FRO... products" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="footer.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/online_shop-master/Sparkles_Public_Interface/Layout/footer.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="21.73077">
+              <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="faq.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/online_shop-master/Sparkles_Public_Interface/Views/faq.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-80.42308">
+              <caret line="123" column="2" selection-start-line="123" selection-start-column="2" selection-end-line="123" selection-end-column="2" />
+              <folding>
+                <marker date="1460810079591" expanded="true" signature="812:866" placeholder="SELECT * FRO... faq_category" />
+                <marker date="1460810079591" expanded="true" signature="1756:1852" placeholder="SELECT * FRO... faq_question" />
+                <marker date="1460810079591" expanded="true" signature="2654:2750" placeholder="SELECT * FRO... faq_question" />
+                <marker date="1460810079591" expanded="true" signature="3006:3068" placeholder="SELECT * FRO... faq_category" />
               </folding>
             </state>
           </provider>
@@ -168,8 +152,6 @@
       <list>
         <option value="$PROJECT_DIR$/online_shop-master/Soo-Ah_Admin_Features/FAQ/Views/faq.php" />
         <option value="$PROJECT_DIR$/online_shop-master/Sparkles_Public_Interface/Views/faq.php" />
-        <option value="$PROJECT_DIR$/online_shop-master/Sparkles_Public_Interface/Stylesheets/echo-index.css" />
-        <option value="$PROJECT_DIR$/online_shop-master/Sparkles_Public_Interface/Layout/header.html" />
         <option value="$PROJECT_DIR$/online_shop-master/Soo-Ah_Admin_Features/FAQ/Views/faq_admin.php" />
         <option value="$PROJECT_DIR$/online_shop-master/Soo-Ah_Admin_Features/FAQ/Views/Layout/admin_header.php" />
         <option value="$PROJECT_DIR$/online_shop-master/Soo-Ah_Admin_Features/FAQ/Views/Layout/Style/admin.css" />
@@ -181,6 +163,18 @@
         <option value="$PROJECT_DIR$/online_shop-master/Soo-Ah_Admin_Features/FAQ/Controller/delete_faq_question.php" />
         <option value="$PROJECT_DIR$/online_shop-master/Soo-Ah_Admin_Features/FAQ/Views/edit_faq_question.php" />
         <option value="$PROJECT_DIR$/online_shop-master/Soo-Ah_Admin_Features/FAQ/Controller/edit_question.php" />
+        <option value="$PROJECT_DIR$/online_shop-master/Sparkles_Public_Interface/Controller/database.php" />
+        <option value="$PROJECT_DIR$/online_shop-master/Sparkles_Public_Interface/Layout/header.html" />
+        <option value="$PROJECT_DIR$/online_shop-master/Sparkles_Public_Interface/Views/SearchError.php" />
+        <option value="$PROJECT_DIR$/online_shop-master/Sparkles_Public_Interface/Controller/checkMatch.php" />
+        <option value="$PROJECT_DIR$/online_shop-master/Sparkles_Public_Interface/Views/Apparel.php" />
+        <option value="$PROJECT_DIR$/online_shop-master/Sparkles_Public_Interface/Views/Jewelry.php" />
+        <option value="$PROJECT_DIR$/online_shop-master/Sparkles_Public_Interface/Views/Shoes.php" />
+        <option value="$PROJECT_DIR$/online_shop-master/Sparkles_Public_Interface/Views/homepage.php" />
+        <option value="$PROJECT_DIR$/online_shop-master/Sparkles_Public_Interface/Layout/footer.html" />
+        <option value="$PROJECT_DIR$/online_shop-master/Sparkles_Public_Interface/Stylesheets/echo-index.css" />
+        <option value="$PROJECT_DIR$/online_shop-master/Sparkles_Public_Interface/Views/HomeIndex.php" />
+        <option value="$PROJECT_DIR$/online_shop-master/Sparkles_Public_Interface/Views/livesearch.php" />
       </list>
     </option>
   </component>
@@ -221,6 +215,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -257,7 +252,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Soo-Ah_BackupFiles" />
+              <option name="myItemId" value="Sparkles_Public_Interface" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -275,33 +274,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Soo-Ah_BackupFiles" />
+              <option name="myItemId" value="Sparkles_Public_Interface" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="faq" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Sparkles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Sparkles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="online_shop-master" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Alya Admin Features" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProductInventory" />
+              <option name="myItemId" value="Stylesheets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -319,14 +296,105 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Alya Admin Features" />
+              <option name="myItemId" value="Sparkles_Public_Interface" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Scripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sparkles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sparkles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="online_shop-master" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sparkles_Public_Interface" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Layout" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sparkles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sparkles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="online_shop-master" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sparkles_Public_Interface" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sparkles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sparkles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="online_shop-master" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sparkles_Public_Interface" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sparkles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sparkles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="online_shop-master" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sparkles_Public_Interface" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ErrorMsg" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -336,19 +404,19 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../online_shop" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp\www\Sparkles\online_shop-master\Sparkles_Public_Interface\Views" />
+      <recent name="C:\wamp\www\Sparkles\online_shop-master\Sparkles_Public_Interface\Controller\ErrorMsg" />
+      <recent name="C:\wamp\www\Sparkles\online_shop-master\Soo-Ah_Admin_Features\FAQ\Controller" />
+      <recent name="C:\wamp\www\Sparkles\online_shop-master\Sparkles_Public_Interface\Scripts" />
+      <recent name="C:\wamp\www\Sparkles\online_shop-master\Sparkles_Public_Interface\Stylesheets" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\wamp\www\Sparkles\online_shop-master\Soo-Ah_Admin_Features\FAQ\Controller" />
       <recent name="C:\wamp\www\Sparkles\online_shop-master\Soo-Ah_Admin_Features\FAQ\Views" />
       <recent name="C:\wamp\www\Sparkles\online_shop-master\Soo-Ah_Admin_Features\FAQ\Views\Layout\Style" />
       <recent name="C:\wamp\www\Sparkles\online_shop-master\Sparkles_Public_Interface\Layout" />
       <recent name="C:\wamp\www\Sparkles\online_shop-master\Soo-Ah_BackupFiles\faq" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\wamp\www\Sparkles\online_shop-master\Soo-Ah_Admin_Features\FAQ\Controller" />
-      <recent name="C:\wamp\www\Sparkles\online_shop-master\Sparkles_Public_Interface\Scripts" />
-      <recent name="C:\wamp\www\Sparkles\online_shop-master\Sparkles_Public_Interface\Stylesheets" />
-      <recent name="C:\wamp\www\Sparkles\online_shop-master\Sparkles_Public_Interface\Views" />
-      <recent name="C:\wamp\www\Sparkles\online_shop-master\Soo-Ah_Admin_Features" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.admin_index.php">
@@ -407,9 +475,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27760968" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28214827" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -436,11 +504,125 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/online_shop-master/Soo-Ah_Admin_Features/FAQ/Views/faq_admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="58" selection-start-line="2" selection-start-column="58" selection-end-line="2" selection-end-column="58" />
+          <folding>
+            <marker date="1460278073019" expanded="true" signature="222:276" placeholder="SELECT * FRO... faq_category" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/online_shop-master/Soo-Ah_Admin_Features/FAQ/Controller/delete_faq_category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="34" column="39" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />
+          <folding>
+            <marker date="1460278072972" expanded="true" signature="153:213" placeholder="DELETE FROM " />
+            <marker date="1460278072972" expanded="true" signature="443:497" placeholder="SELECT * FRO... faq_category" />
+            <marker date="1460278072972" expanded="true" signature="820:964" placeholder="UPDATE faq_c... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/online_shop-master/Soo-Ah_Admin_Features/FAQ/Views/edit_faq_category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="127" column="158" selection-start-line="127" selection-start-column="158" selection-end-line="127" selection-end-column="158" />
+          <folding>
+            <marker date="1460278699987" expanded="true" signature="302:364" placeholder="SELECT * FRO... faq_category" />
+            <marker date="1460278699987" expanded="true" signature="1621:1675" placeholder="SELECT * FRO... faq_category" />
+            <marker date="1460278699987" expanded="true" signature="3248:3343" placeholder="SELECT * FRO... faq_question" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/online_shop-master/Soo-Ah_Admin_Features/FAQ/Controller/delete_faq_question.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="37" column="32" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
+          <folding>
+            <marker date="1460278700025" expanded="true" signature="153:213" placeholder="DELETE FROM " />
+            <marker date="1460278700025" expanded="true" signature="383:479" placeholder="SELECT * FRO... faq_question" />
+            <marker date="1460278700025" expanded="true" signature="771:955" placeholder="UPDATE faq_q... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/online_shop-master/Soo-Ah_Admin_Features/FAQ/Views/edit_faq_question.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="135" column="21" selection-start-line="135" selection-start-column="21" selection-end-line="135" selection-end-column="21" />
+          <folding>
+            <marker date="1460278822165" expanded="true" signature="422:479" placeholder="SELECT * FRO... faq_question" />
+            <marker date="1460278822165" expanded="true" signature="2352:2448" placeholder="SELECT * FRO... faq_question" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/online_shop-master/Soo-Ah_Admin_Features/FAQ/Controller/edit_question.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1460278920801" expanded="true" signature="683:879" placeholder="UPDATE faq_q... " />
+            <marker date="1460278920801" expanded="true" signature="1163:1259" placeholder="SELECT * FRO... faq_question" />
+            <marker date="1460278920801" expanded="true" signature="1739:1837" placeholder="UPDATE faq_q... " />
+            <marker date="1460278920801" expanded="true" signature="2406:2504" placeholder="UPDATE faq_q... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/online_shop-master/Soo-Ah_Admin_Features/FAQ/Views/add_faq_question.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="168" column="21" selection-start-line="168" selection-start-column="21" selection-end-line="168" selection-end-column="21" />
+          <folding>
+            <marker date="1460278573594" expanded="true" signature="244:340" placeholder="SELECT * FRO... faq_question" />
+            <marker date="1460278573594" expanded="true" signature="1442:1538" placeholder="UPDATE faq_q... " />
+            <marker date="1460278573594" expanded="true" signature="2332:2574" placeholder="INSERT INTO faq_question... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/online_shop-master/Soo-Ah_Admin_Features/FAQ/Controller/edit_category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="57" selection-start-line="8" selection-start-column="57" selection-end-line="8" selection-end-column="57" />
+          <folding>
+            <marker date="1460278351765" expanded="true" signature="434:580" placeholder="UPDATE faq_c... " />
+            <marker date="1460278351765" expanded="true" signature="849:903" placeholder="SELECT * FRO... faq_category" />
+            <marker date="1460278351765" expanded="true" signature="1361:1459" placeholder="UPDATE faq_c... " />
+            <marker date="1460278351765" expanded="true" signature="2082:2180" placeholder="UPDATE faq_c... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/online_shop-master/Soo-Ah_Admin_Features/FAQ/Views/Layout/Style/admin.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="77" column="20" selection-start-line="77" selection-start-column="20" selection-end-line="77" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/online_shop-master/Soo-Ah_Admin_Features/FAQ/Views/add_faq_category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
+          <folding>
+            <marker date="1460277935935" expanded="true" signature="206:260" placeholder="SELECT * FRO... faq_category" />
+            <marker date="1460277935935" expanded="true" signature="1222:1318" placeholder="UPDATE faq_c... " />
+            <marker date="1460277935935" expanded="true" signature="2256:2427" placeholder="INSERT INTO faq_category... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/online_shop-master/Soo-Ah_Admin_Features/FAQ/Views/admin_index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -461,7 +643,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -481,14 +662,6 @@
     <entry file="file://$PROJECT_DIR$/online_shop-master/Sparkles_Public_Interface/Stylesheets/admin.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/online_shop-master/Sparkles_Public_Interface/Layout/footer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -514,39 +687,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/online_shop-master/Sparkles_Public_Interface/Views/Apparel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.384615">
-          <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
-          <folding>
-            <marker date="1460272774046" expanded="true" signature="116:211" placeholder="SELECT * FRO... products" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/online_shop-master/Sparkles_Public_Interface/Views/faq.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.846153">
-          <caret line="121" column="24" selection-start-line="121" selection-start-column="24" selection-end-line="121" selection-end-column="24" />
-          <folding>
-            <element signature="e#1334#1354#0#HTML" expanded="true" />
-            <marker date="1460276200125" expanded="true" signature="354:624" placeholder="..." />
-            <marker date="1460276200125" expanded="true" signature="454:624" placeholder="..." />
-            <marker date="1460276200125" expanded="true" signature="519:556" placeholder="..." />
-            <marker date="1460276200125" expanded="true" signature="557:624" placeholder="..." />
-            <marker date="1460276200125" expanded="true" signature="675:703" placeholder="..." />
-            <marker date="1460276200125" expanded="true" signature="790:844" placeholder="SELECT * FRO... faq_category" />
-            <marker date="1460276200125" expanded="true" signature="1582:1637" placeholder="..." />
-            <marker date="1460276200125" expanded="true" signature="1850:1946" placeholder="SELECT * FRO... faq_question" />
-            <marker date="1460276200125" expanded="true" signature="2434:2539" placeholder="..." />
-            <marker date="1460276200125" expanded="true" signature="2804:2900" placeholder="SELECT * FRO... faq_question" />
-            <marker date="1460276200125" expanded="true" signature="3204:3266" placeholder="SELECT * FRO... faq_category" />
-            <marker date="1460276200125" expanded="true" signature="3856:3961" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -554,23 +694,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/online_shop-master/Sparkles_Public_Interface/Stylesheets/echo-index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.0365853">
-          <caret line="35" column="20" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/online_shop-master/Sparkles_Public_Interface/Layout/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.618182">
-          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -586,7 +709,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -594,9 +716,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-8.5">
           <caret line="28" column="51" selection-start-line="28" selection-start-column="51" selection-end-line="28" selection-end-column="51" />
-          <folding>
-            <marker date="1459441261095" expanded="true" signature="129:183" placeholder="SELECT * FRO... faq_category" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -612,13 +731,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-42.5">
           <caret line="65" column="49" selection-start-line="65" selection-start-column="49" selection-end-line="65" selection-end-column="49" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/online_shop-master/Soo-Ah_Admin_Features/FAQ/Views/Layout/Style/admin.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.109091">
+        <state vertical-scroll-proportion="0.0">
           <caret line="77" column="20" selection-start-line="77" selection-start-column="20" selection-end-line="77" selection-end-column="20" />
           <folding />
         </state>
@@ -626,7 +744,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/online_shop-master/Soo-Ah_Admin_Features/FAQ/Views/add_faq_category.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.692307">
+        <state vertical-scroll-proportion="0.0">
           <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
           <folding>
             <marker date="1460277935935" expanded="true" signature="206:260" placeholder="SELECT * FRO... faq_category" />
@@ -638,7 +756,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/online_shop-master/Soo-Ah_Admin_Features/FAQ/Views/faq_admin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="16.5">
+        <state vertical-scroll-proportion="0.0">
           <caret line="2" column="58" selection-start-line="2" selection-start-column="58" selection-end-line="2" selection-end-column="58" />
           <folding>
             <marker date="1460278073019" expanded="true" signature="222:276" placeholder="SELECT * FRO... faq_category" />
@@ -648,7 +766,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/online_shop-master/Soo-Ah_Admin_Features/FAQ/Controller/delete_faq_category.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.461538">
+        <state vertical-scroll-proportion="0.0">
           <caret line="34" column="39" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />
           <folding>
             <marker date="1460278072972" expanded="true" signature="153:213" placeholder="DELETE FROM " />
@@ -660,7 +778,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/online_shop-master/Soo-Ah_Admin_Features/FAQ/Controller/edit_category.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.230769">
+        <state vertical-scroll-proportion="0.0">
           <caret line="8" column="57" selection-start-line="8" selection-start-column="57" selection-end-line="8" selection-end-column="57" />
           <folding>
             <marker date="1460278351765" expanded="true" signature="434:580" placeholder="UPDATE faq_c... " />
@@ -673,10 +791,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/online_shop-master/Soo-Ah_Admin_Features/FAQ/Views/add_faq_question.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.846153">
+        <state vertical-scroll-proportion="0.0">
           <caret line="168" column="21" selection-start-line="168" selection-start-column="21" selection-end-line="168" selection-end-column="21" />
           <folding>
-            <element signature="e#3465#3493#0#HTML" expanded="true" />
             <marker date="1460278573594" expanded="true" signature="244:340" placeholder="SELECT * FRO... faq_question" />
             <marker date="1460278573594" expanded="true" signature="1442:1538" placeholder="UPDATE faq_q... " />
             <marker date="1460278573594" expanded="true" signature="2332:2574" placeholder="INSERT INTO faq_question... " />
@@ -686,7 +803,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/online_shop-master/Soo-Ah_Admin_Features/FAQ/Views/edit_faq_category.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.2909093">
+        <state vertical-scroll-proportion="0.0">
           <caret line="127" column="158" selection-start-line="127" selection-start-column="158" selection-end-line="127" selection-end-column="158" />
           <folding>
             <marker date="1460278699987" expanded="true" signature="302:364" placeholder="SELECT * FRO... faq_category" />
@@ -698,7 +815,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/online_shop-master/Soo-Ah_Admin_Features/FAQ/Controller/delete_faq_question.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.384615">
+        <state vertical-scroll-proportion="0.0">
           <caret line="37" column="32" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
           <folding>
             <marker date="1460278700025" expanded="true" signature="153:213" placeholder="DELETE FROM " />
@@ -710,7 +827,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/online_shop-master/Soo-Ah_Admin_Features/FAQ/Views/edit_faq_question.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.846153">
+        <state vertical-scroll-proportion="0.0">
           <caret line="135" column="21" selection-start-line="135" selection-start-column="21" selection-end-line="135" selection-end-column="21" />
           <folding>
             <marker date="1460278822165" expanded="true" signature="422:479" placeholder="SELECT * FRO... faq_question" />
@@ -721,13 +838,160 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/online_shop-master/Soo-Ah_Admin_Features/FAQ/Controller/edit_question.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.51166964">
+        <state vertical-scroll-proportion="-11.846154">
           <caret line="82" column="13" selection-start-line="82" selection-start-column="13" selection-end-line="82" selection-end-column="13" />
           <folding>
             <marker date="1460278920801" expanded="true" signature="683:879" placeholder="UPDATE faq_q... " />
             <marker date="1460278920801" expanded="true" signature="1163:1259" placeholder="SELECT * FRO... faq_question" />
             <marker date="1460278920801" expanded="true" signature="1739:1837" placeholder="UPDATE faq_q... " />
             <marker date="1460278920801" expanded="true" signature="2406:2504" placeholder="UPDATE faq_q... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/online_shop-master/Sparkles_Public_Interface/Controller/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.8461537">
+          <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/online_shop-master/Sparkles_Public_Interface/Controller/checkMatch.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.9230769">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="11" selection-end-column="30" />
+          <folding>
+            <marker date="1460855897044" expanded="true" signature="94:137" placeholder="SELECT * FRO... products" />
+            <marker date="1460855897044" expanded="true" signature="94:150" placeholder="SELECT * FRO... products" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/online_shop-master/Sparkles_Public_Interface/Views/Apparel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.8846154">
+          <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+          <folding>
+            <marker date="1460856363890" expanded="true" signature="191:273" placeholder="SELECT * FRO... products" />
+            <marker date="1460856363890" expanded="true" signature="191:281" placeholder="SELECT * FRO... products" />
+            <marker date="1460856363890" expanded="true" signature="191:283" placeholder="SELECT * FRO... products" />
+            <marker date="1460856363890" expanded="true" signature="546:649" placeholder="SELECT * FRO... products" />
+            <marker date="1460856363890" expanded="true" signature="1505:1585" placeholder="..." />
+            <marker date="1460856363890" expanded="true" signature="1610:1702" placeholder="..." />
+            <marker date="1460856363890" expanded="true" signature="1727:1816" placeholder="..." />
+            <marker date="1460856363890" expanded="true" signature="1841:1919" placeholder="..." />
+            <marker date="1460856363890" expanded="true" signature="1944:2045" placeholder="..." />
+            <marker date="1460856363890" expanded="true" signature="2198:2874" placeholder="..." />
+            <marker date="1460856363890" expanded="true" signature="2236:2617" placeholder="..." />
+            <marker date="1460856363890" expanded="true" signature="2266:2602" placeholder="..." />
+            <marker date="1460856363890" expanded="true" signature="2300:2583" placeholder="..." />
+            <marker date="1460856363890" expanded="true" signature="2344:2560" placeholder="..." />
+            <marker date="1460856363890" expanded="true" signature="2700:2874" placeholder="..." />
+            <marker date="1460856363890" expanded="true" signature="2730:2874" placeholder="..." />
+            <marker date="1460856363890" expanded="true" signature="2834:2874" placeholder="..." />
+            <marker date="1460856363890" expanded="true" signature="3463:3575" placeholder="..." />
+            <marker date="1460856363890" expanded="true" signature="3485:3568" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/online_shop-master/Sparkles_Public_Interface/Views/SearchError.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-19.615385">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/online_shop-master/Sparkles_Public_Interface/Views/Jewelry.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.8846154">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="20" selection-end-column="6" />
+          <folding>
+            <marker date="1460856443194" expanded="true" signature="192:284" placeholder="SELECT * FRO... products" />
+            <marker date="1460856443194" expanded="true" signature="546:641" placeholder="SELECT * FRO... products" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/online_shop-master/Sparkles_Public_Interface/Views/Shoes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.1923075">
+          <caret line="11" column="102" selection-start-line="11" selection-start-column="102" selection-end-line="11" selection-end-column="102" />
+          <folding>
+            <marker date="1460856483880" expanded="true" signature="189:279" placeholder="SELECT * FRO... products" />
+            <marker date="1460856483880" expanded="true" signature="541:634" placeholder="SELECT * FRO... products" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/online_shop-master/Sparkles_Public_Interface/Views/homepage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.5">
+          <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/online_shop-master/Sparkles_Public_Interface/Layout/footer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="21.73077">
+          <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/online_shop-master/Sparkles_Public_Interface/Views/faq.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-80.42308">
+          <caret line="123" column="2" selection-start-line="123" selection-start-column="2" selection-end-line="123" selection-end-column="2" />
+          <folding>
+            <marker date="1460810079591" expanded="true" signature="812:866" placeholder="SELECT * FRO... faq_category" />
+            <marker date="1460810079591" expanded="true" signature="1756:1852" placeholder="SELECT * FRO... faq_question" />
+            <marker date="1460810079591" expanded="true" signature="2654:2750" placeholder="SELECT * FRO... faq_question" />
+            <marker date="1460810079591" expanded="true" signature="3006:3068" placeholder="SELECT * FRO... faq_category" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/online_shop-master/Sparkles_Public_Interface/Layout/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-76.34615">
+          <caret line="155" column="0" selection-start-line="155" selection-start-column="0" selection-end-line="155" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#input#0;n#div#0;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/online_shop-master/Sparkles_Public_Interface/Stylesheets/echo-index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.6226416">
+          <caret line="295" column="21" selection-start-line="295" selection-start-column="21" selection-end-line="295" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/online_shop-master/Sparkles_Public_Interface/Views/HomeIndex.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-24.846153">
+          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/online_shop-master/Sparkles_Public_Interface/Views/livesearch.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6947935">
+          <caret line="33" column="47" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="47" />
+          <folding>
+            <marker date="1460857923858" expanded="true" signature="122:193" placeholder="SELECT * FRO... products" />
+            <marker date="1460857923858" expanded="true" signature="434:448" placeholder="..." />
+            <marker date="1460857923858" expanded="true" signature="571:599" placeholder="..." />
+            <marker date="1460857923858" expanded="true" signature="816:827" placeholder="..." />
           </folding>
         </state>
       </provider>
