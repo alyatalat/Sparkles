@@ -3,6 +3,18 @@ This is the Index Page of the Sparkles Online Shop Project
 Author: Alya Talat
 -->
 <?php
+session_start();
+require_once("Customerlogin/Models/customer.php");
+$auth_user = new customer();
+if($auth_user->is_loggedin())
+{
+    $user_id = $_SESSION['user_session'];
+    $stmt = $auth_user->runQuery("SELECT * FROM users WHERE user_id=:user_id");
+    $stmt->execute(array(":user_id"=>$user_id));
+    $userRow=$stmt->fetch(PDO::FETCH_ASSOC);
+}
+?>
+<?php
     require_once("../Layout/header.html"); // header layout
 ?>
 <!-- main -->
@@ -30,13 +42,6 @@ Author: Alya Talat
         </div>
     </div>
 </div>
-
-<style>
-    .footer-container{
-        margin-top: 0;
-    }
-</style>
-
 <?php
     require_once("../Layout/footer.html"); // footer layout
 ?>
