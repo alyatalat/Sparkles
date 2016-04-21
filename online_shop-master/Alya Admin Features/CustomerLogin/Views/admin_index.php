@@ -7,14 +7,88 @@
 <!-- Optional theme -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 <link rel="stylesheet" href="Layout/Style/admin.css" />
+
+<link rel="stylesheet" href="Layout/Style/main.css" />
+<link rel="stylesheet" href="Layout/Style/jquery.dataTables.min.css"/>
+<link rel="stylesheet" href="Layout/Style/dataTables.bootstrap.min.css" />
+<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="Layout/Scripts/sorttable.js"></script>
+<script src="Layout/Scripts/dataTables.bootstrap.js"></script>
+<script src="Layout/Scripts/jquery.dataTables.js"></script>
+
+
+
 <?php
 require_once("Layout/admin_header.php");
 ?>
 
+<?php
+require_once('../Controller/database.php');
+$query = "SELECT * FROM customer ORDER BY Customer_Id";
+$entry = $db->query($query);
+?>
+
+<div id="main">
+
+    <!-- display a table of products -->
+    <h3 class="text-center title">Customer Management System</h3>
+    <br/>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Filter Results</h3>
+        </div>
+        <div class="panel-body">
+            <form action="" method="post" id="filter_feedback_form" >
+                <div class="row">
+                    <div class="col-md-8 col-sm-8">
+                        Troubleshoot
+                        <div class="checkbox">
+                            <label><input type="checkbox" name="category" value="">Reset Customer Password</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" name="category" value="">Deactivate user account</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row text-right results">
+                    <button class="btn btn-md" type="submit"><a href="">Show Results</a></button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div >
+        <table id="feedbacktbl" class="table table-hover table-condensed text-left">
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Username</th>
+                <th>Customer Name</th>
+                <th>Customer Email</th>
+                <th>Billing Address</th>
+                <th>Phone Number</th>
+            </tr>
+            </thead>
+            <tbody>
+            <?php foreach ($entry as $customer) : ?>
+                <tr>
+                    <td><?php echo $customer['Customer_Id']; ?></td>
+                    <td><?php echo $customer['UserName']; ?></td>
+                    <td><?php echo $customer['FirstName']. " " .$customer['LastName']; ?></td>
+                    <td><?php echo $customer['Email']; ?></td>
+                    <td><?php echo $customer['BillingAddress']; ?></td>
+                    <td><?php echo $customer['PhoneNumber']; ?></td>
+                </tr>
+            <?php endforeach; ?>
+            </tbody>
+        </table>
+    </div>
+
+</div> <!-- end main -->
 
 
-    This is the main page
-    Your content should be in here
+
+
 
 
 </div> <!-- This closing tag must be at the end of your main content!! -->

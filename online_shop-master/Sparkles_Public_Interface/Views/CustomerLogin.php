@@ -24,36 +24,28 @@ if(isset($_POST['btn-login']))
         echo '<META HTTP-EQUIV="refresh" content="0;URL=' . $URL . '">';
     }
     // otherwise show error message
+    else if(empty($email) || empty($password)){
+        $error = "Please do not leave fields empty";
+    }
     else
     {
         $error = "Username and Password are incorrect or do not match";
     }
 }
 ?>
-<link rel="stylesheet" href="Customerlogin/Stylesheets/customerlogin.css">
+<link rel="stylesheet" href="Customerlogin/Layout/customerlogin.css">
+
 <main class="containter">
-<div class="row">
-    <div class="col-md-6 content">
-        <h2>Login to your account</h2>
-        <h5>Existing Sparkles Customer</h5>
-        <hr/>
-        <form role="form" id="login" method="post" >
-            <div class="">
-                <label for="email">Email address:</label>
-                <input type="email" name="email" class="form-control" id="email">
-            </div>
-            <br/>
-            <div class="">
-                <label for="pwd">Password:</label>
-                <input type="password" name="password" class="form-control" id="pwd">
-            </div>
-            <br/>
-            <div class="checkbox">
-                <label><input type="checkbox"> Remember me</label>
-            </div>
-            <br/>
-            <button type="submit" name="btn-login" class="btn btn-default">Login</button>
-        </form>
+<div class="row content">
+    <div class="main-nav">
+        <h1>Login or Create an Account</h1>
+        <ul id="nav" class="nav nav-tabs">
+            <li class="active"><a href="CustomerLogin.php">Existing Customer</a></li>
+            <li><a href="CustomerSignup.php">New Customer</a></li>
+        </ul>
+    </div>
+    <div>
+        <br/>
         <div id="error">
             <?php
             if(isset($error))
@@ -66,29 +58,26 @@ if(isset($_POST['btn-login']))
             }
             ?>
         </div>
-    </div>
-    <div class="col-md-6 content">
-        <h2>Create a new account</h2>
-        <h5>New Sparkles Customer</h5>
-        <hr/>
-        <form role="form" id="signup" method="post" action="signup.php">
-            <div class="">
-                <label for="email">Email address:</label>
-                <input type="email" class="form-control" id="email">
-            </div>
-            <br/>
-            <div class="">
-                <label for="pwd">Password:</label>
-                <input type="password" class="form-control" id="pwd">
-            </div>
-            <br/>
-            <div class="">
-                <label for="confirmpwd">Confirm Password:</label>
-                <input type="password" class="form-control" id="confirmpwd">
-            </div>
-            <br/>
-            <button type="submit" name="btn-login" class="btn btn-default">Sign Up</button>
-        </form>
+        <div class="col-md-6 content">
+            <h2>Login to your account</h2><br/>
+            <form role="form" id="login" method="post" >
+                <div class="">
+                    <label for="email">Email address:</label>
+                    <input type="email" name="email" class="form-control" id="email">
+                </div>
+                <br/>
+                <div class="">
+                    <label for="pwd">Password:</label>
+                    <input type="password" name="password" class="form-control" id="pwd">
+                </div>
+                <br/>
+                <div class="checkbox">
+                    <label><input type="checkbox"> Remember me</label>
+                </div>
+                <br/>
+                <button type="submit" name="btn-login" class="btn btn-default">Login</button>
+            </form>
+        </div>
     </div>
 </div>
 </main>

@@ -27,19 +27,18 @@ class customer
         return $stmt;
     }
 
-    public function register($uname,$umail,$upass)
+    public function register($usermail,$userpass)
     {
         try
         {
-            $new_password = password_hash($upass, PASSWORD_DEFAULT);
-
-            $stmt = ("INSERT INTO users(user_name,user_email,user_pass)
-		                                               VALUES(:uname, :umail, :upass)");
-
-            $stmt->bindparam(":uname", $uname);
-            $stmt->bindparam(":umail", $umail);
-            $stmt->bindparam(":upass", $new_password);
-
+            $new_password = password_hash($userpass, PASSWORD_DEFAULT);
+            require_once('database.php');
+            require_once('dbclass.php');
+            $db = Dbclass::getDB();
+            $stmt = $db->prepare("INSERT INTO users(user_email,user_pass)
+		                                               VALUES( :usermail, :userpass)");
+            $stmt->bindparam(":usermail", $usermail);
+            $stmt->bindparam(":userpass", $new_password);
             $stmt->execute();
 
             return $stmt;

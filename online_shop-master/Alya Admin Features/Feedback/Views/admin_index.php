@@ -43,7 +43,7 @@ $entry = $db->query($query);
             <h3 class="panel-title">Filter Results</h3>
         </div>
         <div class="panel-body">
-            <form action="" method="post" id="filter_feedback_form" >
+            <form action="thankyou.php" method="post" id="filter_feedback_form" >
                 <div class="row">
                     <div class="col-md-8 col-sm-8">
                         Department
