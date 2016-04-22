@@ -1,5 +1,5 @@
 <?php
-$dsn = 'mysql:host=localhost;dbname=dblogin';
+$dsn = 'mysql:host=localhost;dbname=sparkles';
 $username = 'root';
 $password = '';
 

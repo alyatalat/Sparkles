@@ -35,7 +35,7 @@ $userRow=$stmt->fetch(PDO::FETCH_ASSOC);
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="../HomeIndex.php">Back to Shopping</a></li>
-                    <li><a href="../Wishlist.php">My WishList</a></li>
+                    <li><a href="../Wishlist/Views/Wishlist.php">My WishList</a></li>
                     <li><a href="#">My Orders</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">

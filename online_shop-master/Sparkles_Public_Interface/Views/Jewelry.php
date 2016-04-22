@@ -59,7 +59,7 @@ $products = $db->query($query);
                     <a href="GiftCards.php">My Gift Cards</a>
                 </li>
                 <li>
-                    <a href="Wishlist.php">My WishList</a>
+                    <a href="Wishlist/Views/Wishlist.php">My WishList</a>
                 </li>
                 <li>
                     <a href="Sale.php">Sale</a>
@@ -91,9 +91,9 @@ $products = $db->query($query);
                         <ul class="productlist">
                             <li><?php echo '<img src="../'. $product['Image'] .'" alt="product image" width="150" height="150"/>'; ?></li>
                             <li><?php echo $product['Product_Title']; ?></li>
-                            <li><?php echo $product['Price_Id']; ?></li>
+                          <!--  <li><?php //echo $product['Price_Id']; ?></li>-->
                             <li><button>Add To Cart</button></li>
-                            <li><a href="#">Add To Wishlist</a></li>
+                            <li><a href="Wishlist/Views/Wishlist.php?id=<?php echo $product['Product_Id']; ?>">Add To Wishlist</a></li>
                             <li><a href="#">Rate this item</a></li>
                         </ul>
                     <?php endforeach; ?>

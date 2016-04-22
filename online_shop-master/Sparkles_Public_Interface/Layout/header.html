@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../Stylesheets/ProductPages.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script src="Scripts/index.js"></script>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -28,8 +29,8 @@
             <div class="currency dropdown menu_icon">
                 <a href="" title="Currency" class="dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">CAD $ <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                    <li><a href="#">CAD $</a></li>
-                    <li><a href="#">USD $</a></li>
+                    <li><a class="ddl" href="#" value="CAD">CAD $</a></li>
+                    <li><a class="ddl" href="#" value="USD">USD $</a></li>
                 </ul>
             </div>
             <div class="shopping_cart menu_icon">
@@ -85,3 +86,23 @@
         <li><a href="Sale.php">SALE</a></li>
     </ul>
 </div>
+<script>
+
+    $('.dropdown-menu li > a').click(function(e){
+        var userchoice = this.innerHTML;
+        if(userchoice === 'USD $')
+        {
+            document.cookie = "currency=USD";
+            location.reload();
+        }
+        else if(userchoice === 'CAD $'){
+            document.cookie = "currency=CAD";
+            document.location.reload()
+        }
+        else
+        {
+            alert('wrong choice');
+        }
+    });
+
+</script>

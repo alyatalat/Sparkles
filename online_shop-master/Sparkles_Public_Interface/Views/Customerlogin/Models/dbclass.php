@@ -3,7 +3,7 @@
 class Dbclass{
     
     
-    private static $dsn = 'mysql:host=localhost;dbname=dblogin';
+    private static $dsn = 'mysql:host=localhost;dbname=sparkles';
     private static $username = 'root';
     private static $password = '';
     private static $db;
