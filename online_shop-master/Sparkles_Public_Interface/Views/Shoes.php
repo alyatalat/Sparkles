@@ -90,7 +90,7 @@ $products = $db->query($query);
                         <ul class="productlist">
                             <li><?php echo '<img src="../'. $product['Image'] .'" alt="product image" width="150" height="150"/>'; ?></li>
                             <li><?php echo $product['Product_Title']; ?></li>
-                           <!-- <li><?php //echo $product['Price_Id']; ?></li>-->
+                            <div class="ProductPrice"><?php echo $product['Price'];?></div>
                             <li><button>Add To Cart</button></li>
                             <li><a href="Wishlist/Views/Wishlist.php?id=<?php echo $product['Product_Id']; ?>">Add To Wishlist</a></li>
                             <li><a href="#">Rate this item</a></li>
@@ -110,6 +110,45 @@ $products = $db->query($query);
     </div>
 </div>
 
+
+<script>
+    var returnedvalue;
+    var price;
+    var cookieValue = document.cookie.replace(/(?:(?:^|.*;\s*)currency\s*\=\s*([^;]*).*$)|^.*$/, "$1");
+    function getCookieValue() {
+        var currencySelected = cookieValue;
+        if (currencySelected === "USD") {
+            $.ajax({
+                type: "POST",
+                url: "getCurrency.php",
+                cache: false,
+
+                success: function(result) {
+                    returnedvalue = result;
+                    var USPrice = returnedvalue;
+                    USPrice = Math.round(USPrice * 100) / 100;
+                    $.each($('.ProductPrice'), function(key, value){
+                        var price = $(value).text();
+                        var total = price*USPrice;
+                        total = Math.round(total*100)/100;
+                        total = "USD $"+total;
+                        $(value).text(total);
+                        //  $(value).text(price*USPrice);
+                    });
+                }
+            });
+        }
+        else if(currencySelected === "CAD")
+        {
+            $.each($('.ProductPrice'), function(key, value){
+                var price = $(value).text();
+                $(value).text("CAD $"+price);
+            });
+
+        }
+    }
+    getCookieValue();
+</script>
 
 
 
