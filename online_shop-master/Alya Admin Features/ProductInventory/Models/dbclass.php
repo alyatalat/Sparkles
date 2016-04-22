@@ -5,7 +5,7 @@ class Dbclass{
     
     private static $dsn = 'mysql:host=localhost;dbname=sparkles';
     private static $username = 'root';
-    private static $password = '';
+    private static $password = 'fatemeh';
     private static $db;
     
     private function __construct() {

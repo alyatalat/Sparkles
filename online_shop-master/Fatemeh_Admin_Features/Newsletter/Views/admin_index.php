@@ -1,3 +1,8 @@
+<?php
+require_once('../Models/DbConnection.php');
+require_once('../Models/Newsletter.php');
+require_once('../Models/NewsletterDB.php');
+?>
 <script
     src="https://code.jquery.com/jquery-2.2.2.min.js"
     integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI="
@@ -10,15 +15,63 @@
 <?php
 require_once("Layout/admin_header.php");
 ?>
+<div id="main">
+    <h3 class="page-header">Newsletters list</h3>
+    <table class="table table-striped">
+        <tr>
+            <td style="padding: 10px;"><b>Id</b></td>
+            <td style="padding: 10px;"><b>Title</b></td>
+            <td style="padding: 10px;"><b>Body</b></td>
+            <td style="padding: 10px;"><b>Date Released</b></td>
+        </tr>
+        <?php
+
+        $news=NewsletterDB::getNewsletters();
 
 
+        // var_dump($news);
+        foreach($news as $new){
+            $id=$new->getID();
+            echo "<tr>";
+            echo "<td>".$new->getID()."</td>";
+            echo "<td>".$new->getTitle()."</td>";
+            echo "<td>".$new->getBody()."</td>";
+            echo "<td>".$new->getDateReleased()."</td>";
 
-    This is the main page
-    Your content should be in here
+            echo "<td style='padding: 5px'>
+        <form action='editNewsletterForm.php' method='post' id='editNews'>
+            <input type='hidden' name='newsId' value="."'$id'"."/>
+            <input type='submit' name='Edit' value='Edit' class='btn btn-primary' />
+         </form>
+        </td>";
 
-
+            echo "<td style='padding: 5px'>
+        <form action='deleteNewsletter.php' method='post' id='deleteNews'>
+            <input type='hidden' name='newsId' value="."'$id'"."/>
+            <input type='submit' name='delete' value='Delete' class='btn btn-primary'/>
+         </form>
+        </td>";
+            echo "<td style='padding: 5px'>
+        <form action='sendNewsletter.php' method='post' >
+            <input type='hidden' name='newsId' value="."'$id'"."/>
+            <input type='submit' name='send' value='Email to Subscribers' class='btn btn-primary'/>
+         </form>
+        </td>";
+            echo "</tr>";
+        }
+        ?>
+    </table>
+    <br/>
+    <br/>
+    <a href="createNewsletter.php" class="btn btn-primary">Create a Newsletter</a>
+    <div class="container-fluid">
+        <div class="row">
+            <?php
+            require_once("Layout/admin_footer.php");
+            ?>
+        </div>
+    </div>
 </div> <!-- This closing tag must be at the end of your main content!! -->
 
-<?php
-require_once("Layout/admin_footer.php");
-?>
+
+
