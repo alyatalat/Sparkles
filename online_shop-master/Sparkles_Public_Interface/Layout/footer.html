@@ -3,6 +3,46 @@
     Author: Soo-Ah Jung
 -->
 <!-- footer -->
+
+<!-- Newsletter Code-->
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('#subscribe').submit(function(event){
+            event.preventDefault();
+            var email = $('#emailBox').val();
+            $.getJSON('../Views/Subescriber/validateSubscriber.php',{email : email}, function (data) {
+                if(data===""){
+                    // alert("test");
+                    $.getJSON('../Views/Subescriber/findSubscriber.php',{email : email}, function (data) {
+                        console.log(data);
+                        if(data!=false){
+                            if(data.Active==0){
+                                $.getJSON('../Views/Subescriber/activateSubscriber.php',{email : email}, function (data) {
+                                    $('#message').html(data);
+                                });
+                            }
+                            else{
+                                var message="You have already subscribed to our newsletter.";
+                                $('#message').html(message);
+                            }
+                        }
+                        else if(data===false){
+                            $.getJSON('../Views/Subescriber/addSubscriber.php',{email : email}, function (data) {
+                                $('#message').html(data);
+                            });
+                        }
+                    });
+                }
+                else{
+                    $('#message').html(data);
+                }
+            })
+        });
+    });
+</script>
+<!-- End of Newsletter Code-->
 <div class="footer-container">
     <div class="container">
         <footer id="footer" class="row">
@@ -40,13 +80,14 @@
             <section class="footer-block col-xs-12 col-sm-6 col-md-3 col-lg-3">
                 <h4 class="navtitle">Newsletter<span class="plus minus">+</span></h4>
                 <div class="block_content toggle-footer">
-                    <form action="" method="post">
+                    <form action="" method="post" id="subscribe">
                         <div class="form-group">
                             <input type="text" id="emailBox" name="email" size="20" />
                             <button type="submit" id="submitNewsletter" name="submitNewsletter" class="btn btn-link">
                                 <img src="../Images/arrow-right.png" alt="submit image" id="arrw" />
                             </button>
                         </div>
+                        <span id="message"></span>
                     </form>
                 </div>
             </section>
