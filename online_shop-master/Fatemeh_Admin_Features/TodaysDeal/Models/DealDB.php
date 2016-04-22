@@ -10,6 +10,7 @@ class DealDB {
         foreach ($result as $row) {
             $product = new Product();
             $product->setID($row['Product_Id']);
+            $product->setImage($row['Image']);
             $product->setTitle($row['Product_Title']);
             $product->setCategory($row['Category']);
             $product->setProduct_Description($row['Product_Description']);
