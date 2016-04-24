@@ -95,7 +95,15 @@ $products = $db->query($query);
                         <!-- code by Loveleen Anand for currency exchange -->
 
                       <div class="ProductPrice"><?php echo $product['Price'];?></div>
-                        <li><button>Add To Cart</button></li>
+                        <li><form action= "Cart" method="get"
+                                  id="add_to_cart_form">
+                                <input type="hidden" name="action" value="add" />
+
+                                <input type="hidden" name="product_id" value=<?php echo $product['Product_Id']?> />
+                                <b>Quantity:</b>&nbsp;
+                                <input type="text" name="quantity" value="1"/>
+                                <input type="submit" value="Add to Cart" />
+                            </form></li>
                         <li><a href="Wishlist/Views/Wishlist.php?id=<?php echo $product['Product_Id']; ?>">Add To Wishlist</a></li>
                         <li><a href="#">Rate this item</a></li>
                     </ul>
