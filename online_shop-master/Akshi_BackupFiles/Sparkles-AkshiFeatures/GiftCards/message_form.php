@@ -1,53 +1,33 @@
-<html>
-<head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../Scripts/Gift_Card.css">
-
-</head>
+<script
+    src="https://code.jquery.com/jquery-2.2.2.min.js"
+    integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI="
+    crossorigin="anonymous"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+<link rel="stylesheet" href="../View/Layout/Style/admin.css" />
+<link rel="stylesheet" href="../Scripts/Gift_Card.css"/>
 <?php
-$error="";
-if(isset($_POST['send'])) {
-
-    $to = $_POST['email_to'];
-    $msg=$_POST['message'];
-    $amt=$_POST['amount'];
-    $pay=$_POST['payment'];
-    $id=$_POST['id'];
-
-    if(empty($to)) {
-    $error .= "<p style='color:red;'>Please enter an email. </p>";
-    }
-    else{
-    if(!filter_var($to,FILTER_VALIDATE_EMAIL)){
-    $error .= "<p style='color:red;'>Please enter a valid email. <br />";
-    }
-    }
-
-    if(empty($error))
-    {
-        header("location: thankyougift.php?id=$id&to=$to&msg=$msg&amt=$amt&pay=$pay");
-    }
-
-}
-
-
-
+require_once("../View/Layout/admin_header.php");
 ?>
-
-
-<body>
-<?php require_once('../view/header.html');?>
 
 <div id="gift_card_send">
 
 </div>
+<!--if the error is set then error will be displayed-->
 <div id="gift_message">
     <?php
-    echo "<b>$error</b>";
+    if (isset ($_GET['error']))
+    {
+        $error = $_GET['error'];
+        echo "<b>$error</b>";
+    }
+
     ?>
 
-    <form action="" method="post">
-
+    <form action="thankyougift.php" method="post">
+<!--hidden label for gift id-->
         <input type="hidden" name="id" value="<?php echo $_POST['gift_id'];?>"/>
 
         <label>To :</label>
@@ -66,21 +46,24 @@ if(isset($_POST['send'])) {
 
         <label>Payment Type :</label>
         <select name="payment">
-            <option value="visa">Visa</option>
-            <option value="mastercard">Master Card</option>
-            <option value="discover">Discover</option>
-            <option value="stripe" selected>Stripe</option>
+            <option value="card" selected>Card</option>
         </select><br/>
+        
+<!--script for the button to run stripe-->
+         <script
+                src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                data-key="pk_test_hNOTamz7C1hySP4mJemYBbYp"
+                data-amount="<?php $_POST['amount']?>"
+                data-name="Pay for Gift Card"
+                data-description="Gift Card"
+                data-locale="auto">
+         </script>
 
-        <button type="submit" name="send">Pay</button>
     </form>
 
 
-
-
+</div> <!-- This closing tag must be at the end of your main content!! -->
+</div>
+<?php
+require_once("../View/Layout/admin_footer.php");
 ?>
-
-<?php require_once('../view/footer.html');?>
-
-</body>
-</html>

@@ -1,61 +1,49 @@
 <?php
+$db = Database::getDB();
 
-// This function calculates a shipping charge of $5 per item
-// but it only charges shipping for the first 5 items
-function shipping_cost() {
-    $item_count = cart_item_count();
-    $item_shipping = 5;   // $5 per item
-    if ($item_count > 5) {
-        $shipping_cost = $item_shipping * 5;
-    } else {
-        $shipping_cost = $item_shipping * $item_count;
-    }
-    return $shipping_cost;
-}
 
-function card_name($card_type) {
-    switch($card_type){
-        case 1: 
-           return 'MasterCard';
-        case 2: 
-            return 'Visa';
-        case 3: 
-            return 'Discover';
-        case 4:
-            return 'American Express';
-        default:
-            return 'Unknown Card Type';
-    }
-}
-
-function add_order($card_type, $card_number, $card_cvv, $card_expires) {
+function getbilling_address($cust_id)
+{
     global $db;
-    //$customer_id = $_SESSION['user']['customerID'];
-    $customer_id = 1;
-    $customer_details = get_userdetails($customer_id);
+    $query ='select BillingAddress from customer where Customer_Id = '. $cust_id;
+    $add = $db->query($query);
+    $billing_address = $add->fetch();
 
-   // $billing_id = $_SESSION['user']['billingAddressID'];
-   // $shipping_id = $_SESSION['user']['shipAddressID'];
-    $shipping_cost = shipping_cost();
-    //$tax = tax_amount(cart_subtotal());
+    return $billing_address;
+}
+
+function add_order($amount, $shipAddress){
+    global $db;
+    $customer_id = $_SESSION['cust_id'];
     $order_date = date("Y-m-d H:i:s");
-    $db = Database::getDB();
-    $query = "INSERT INTO orders (Customer_Id, OrderDate, ShipAmount, Tax,
-                             ShipDate, CardType, CardNumber,
-                             CardExpires)
-         VALUES ('$customer_id', '$order_date', '$shipping_cost', 0, , '$card_type', '$card_number', '$card_expires')";
-    $row_count = $db->exec($query);
-
+    $amount = $amount;
+    $billing_add = $shipAddress;
+    $query = 'INSERT INTO orders(Cust_Id,Order_Date,Ship_Amount,Ship_Address)
+              VALUES (:customer_id, :order_date, :ship_amount, :billing_add)';
+    $statement = $db->prepare($query);
+    $statement->bindValue(':customer_id', $customer_id);
+    $statement->bindValue(':order_date', $order_date);
+    $statement->bindValue(':ship_amount', $amount);
+    $statement->bindValue(':billing_add', $billing_add);
+    $statement->execute();
     $order_id = $db->lastInsertId();
+    $statement->closeCursor();
     return $order_id;
 }
 
 function add_order_item($order_id, $product_id,
                         $item_price, $discount, $quantity) {
     global $db;
-    $query = "INSERT INTO OrderItems (Order_Id, Product_Id, Item_Price, Discount_Amount, Quantity)
-        VALUES ('$order_id', '$product_id', '$item_price', '$discount', '$quantity')";
+    $query = '
+        INSERT INTO OrderItems (orderID, productID, itemPrice,
+                                discountAmount, quantity)
+        VALUES (:order_id, :product_id, :item_price, :discount, :quantity)';
     $statement = $db->prepare($query);
+    $statement->bindValue(':order_id', $order_id);
+    $statement->bindValue(':product_id', $product_id);
+    $statement->bindValue(':item_price', $item_price);
+    $statement->bindValue(':discount', $discount);
+    $statement->bindValue(':quantity', $quantity);
     $statement->execute();
     $statement->closeCursor();
 }

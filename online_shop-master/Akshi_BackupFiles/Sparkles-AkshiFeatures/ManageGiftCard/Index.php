@@ -1,27 +1,30 @@
+<script
+    src="https://code.jquery.com/jquery-2.2.2.min.js"
+    integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI="
+    crossorigin="anonymous"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+<link rel="stylesheet" href="../View/Layout/Style/admin.css" />
+<link rel="stylesheet" href="../Scripts/Gift_Card.css"/>
 <?php
+require_once("../View/Layout/admin_header.php");
+?>
 
+
+<?php
 require_once('../model/database.php');
+require_once('../model/giftcard.php');
+require_once('../model/giftcard_db.php');
 
 $db = Database::getDB();
-$query='select * from gift_cards';
+$gift_card = GiftCardDB::getGifts();
 
-$gift_card = $db->query($query);
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-
-
-<head>
-    <title>Manage Gift Card</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../Scripts/Gift_Card.css">
-
-</head>
-
-
-<body id="page-wrapper">
-<h1 id="heading">Manage Gift Cards</h1>
+<!--include the table with details of the gift cards like title, description and image source-->
+    <div id="main">
+    <h1 id="heading">Manage Gift Cards</h1>
 <table id="table-view"><tr>
     <th>Title</th>
     <th>Description</th>
@@ -33,6 +36,7 @@ $gift_card = $db->query($query);
         <td><?php echo $gc['Description'];?></td>
         <td><?php echo $gc['Image_src'];?></td>
         <td>
+<!--            when the user clicks on update the id is sent as a hidden field-->
             <form action="update_giftcard.php" method="post"
                   id="update_giftcard">
                 <input type="hidden" name="GiftCard_Id"
@@ -41,6 +45,7 @@ $gift_card = $db->query($query);
             </form>
         </td>
         <td>
+            <!--when the user clicks on delete the id is sent as a hidden field-->
             <form action="delete_giftcard.php" method="post"
                   id="delete_giftcard">
                 <input type="hidden" name="GiftCard_Id"
@@ -53,6 +58,8 @@ $gift_card = $db->query($query);
     <?php endforeach; ?>
 </table>
 <p><a href="add_giftcard.php">Add Gift Card</a></p>
-<?php include ('../View/footer.php');?>
-</body>
-</html>
+    </div>
+</div>
+<?php
+require_once("../View/Layout/admin_footer.php");
+?>
