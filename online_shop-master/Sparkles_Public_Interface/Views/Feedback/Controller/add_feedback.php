@@ -34,9 +34,10 @@ if(empty($error)){
                  ('$name', '$email', '$subject', '$message', '$Message_Date','$department')";
 
     $db->exec($query);
+
     // Go to thank you page
-    header('location: ../Views/Thankyou.php');
+ //   header('location: ../Views/Thankyou.php');
 } else {
-    header("location: ../Views/feedback.php?error=$error&name=$name&email=$email&subject=$subject&message=$message&department=$department");
+  //  header("location: ../Views/feedback.php?error=$error&name=$name&email=$email&subject=$subject&message=$message&department=$department");
 }
 ?>

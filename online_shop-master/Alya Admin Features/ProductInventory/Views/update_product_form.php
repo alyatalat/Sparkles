@@ -26,10 +26,11 @@ elseif(isset($_GET['id'])) {
 $sql = "SELECT * FROM products WHERE Product_Id = '$id'";
 $result = $db->query($sql);
 $product = $result->fetch();
+var_dump($product);
 
 
 ?>
-<script src="../Scripts/previewimage.js"></script>
+<script src="Layout/Scripts/previewimage.js"></script>
 
 <script
     src="https://code.jquery.com/jquery-2.2.2.min.js"
@@ -57,12 +58,10 @@ $product = $result->fetch();
                 if(isset($_GET['error'])){
                     echo
                     "
-                    <div class='row' style='
-                                        color:crimson;
-                                        font-weight: 500;'>
+                    <div class='row alert alert-danger'>
                     <hr/>
-                    <p style='padding-left: 1rem;'>Please Fix The Following Errors:</p>
-                    <p style='padding-left: 4rem;'>{$_GET['error']}</p>
+                    <p style=>Please Fix The Following Errors:</p>
+                    <p style=>{$_GET['error']}</p>
                     <hr/>
                     </div>
 

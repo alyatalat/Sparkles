@@ -33,30 +33,9 @@ $entry = $db->query($query);
     <!-- display a table of products -->
     <h3 class="text-center title">Customer Management System</h3>
     <br/>
+    <hr/>
+    <br/>
 
-    <div class="panel panel-default">
-        <div class="panel-heading">
-            <h3 class="panel-title">Filter Results</h3>
-        </div>
-        <div class="panel-body">
-            <form action="" method="post" id="filter_feedback_form" >
-                <div class="row">
-                    <div class="col-md-8 col-sm-8">
-                        Troubleshoot
-                        <div class="checkbox">
-                            <label><input type="checkbox" name="category" value="">Reset Customer Password</label>
-                        </div>
-                        <div class="checkbox">
-                            <label><input type="checkbox" name="category" value="">Deactivate user account</label>
-                        </div>
-                    </div>
-                </div>
-                <div class="row text-right results">
-                    <button class="btn btn-md" type="submit"><a href="">Show Results</a></button>
-                </div>
-            </form>
-        </div>
-    </div>
     <div >
         <table id="feedbacktbl" class="table table-hover table-condensed text-left">
             <thead>
@@ -67,6 +46,9 @@ $entry = $db->query($query);
                 <th>Customer Email</th>
                 <th>Billing Address</th>
                 <th>Phone Number</th>
+                <th>Account Status</th>
+                <th>Delete</th>
+                <th>Update</th>
             </tr>
             </thead>
             <tbody>
@@ -78,6 +60,28 @@ $entry = $db->query($query);
                     <td><?php echo $customer['Email']; ?></td>
                     <td><?php echo $customer['BillingAddress']; ?></td>
                     <td><?php echo $customer['PhoneNumber']; ?></td>
+                    <td><?php echo $customer['Status']; ?></td>
+                    <td>
+                        <form action="../Controller/delete_account.php" method="post"
+                              id="delete_account_form">
+                            <input type="hidden" name="Customer_Id"
+                                   value="<?php echo $customer['Customer_Id']; ?>" />
+                            <button type="submit" class="delete btn btn-sm btn-default">
+                                <span class="glyphicon glyphicon-remove"></span>
+                            </button>
+
+                        </form>
+                    </td>
+                    <td>
+                        <form action="update_account.php" method="post"
+                              id="update_product_form">
+                            <input type="hidden" name="Customer_Id"
+                                   value="<?php echo $customer['Customer_Id']; ?>" />
+                            <button type="submit" class="btn btn-sm btn-default">
+                                <span class="glyphicon glyphicon-edit"></span>
+                            </button>
+                        </form>
+                    </td>
                 </tr>
             <?php endforeach; ?>
             </tbody>

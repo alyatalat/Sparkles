@@ -3,7 +3,7 @@
 require_once("Layout/admin_header.php");
 require_once('../Controller/database.php');
 ?>
-<script src="../Scripts/previewimage.js"></script>
+<script src="Layout/Scripts/previewimage.js"></script>
 <script
     src="https://code.jquery.com/jquery-2.2.2.min.js"
     integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI="
@@ -29,12 +29,10 @@ require_once('../Controller/database.php');
                 if(isset($_GET['error'])){
                     echo
                     "
-                    <div class='row' style='
-                                        color:crimson;
-                                        font-weight: 500;'>
+                    <div class='alert alert-danger row'>
                     <hr/>
-                    <p style='padding-left: 1rem;'>Please Fix The Following Errors:</p>
-                    <p style='padding-left: 4rem;'>{$_GET['error']}</p>
+                    <p>Please Fix The Following Errors:</p>
+                    <p>{$_GET['error']}</p>
                     <hr/>
                     </div>
 
@@ -55,7 +53,7 @@ require_once('../Controller/database.php');
                             "
                             <?php
                                 if (isset($_GET['image'])&&!empty($_GET['image'])){
-                                    $file=$_GET['image'];
+                                    $file="ProductInventory/Views/Layout/".$_GET['image'];
                                 }
                                 else {
                                     $file='ProductInventory/Views/Layout/Images/Uploads/placeholder.png';
@@ -81,19 +79,35 @@ require_once('../Controller/database.php');
                                 </tr>
                                 <tr>
                                     <td><label>Product Description:</label></td>
-                                    <td class="addbody"><input type="input" name="description" /></td>
+                                    <td class="addbody"><input type="input" name="description" value="<?php
+                                        if(isset($_GET['description'])){
+                                            echo "{$_GET['description']}";
+                                        }
+                                        ?>" /></td>
                                 </tr>
                                 <tr>
                                     <td><label>Product Price:</label></td>
-                                    <td class="addbody"><input type="input" name="price" /></td>
+                                    <td class="addbody"><input type="input" name="price" value="<?php
+                                        if(isset($_GET['price'])){
+                                            echo "{$_GET['price']}";
+                                        }
+                                        ?>"/></td>
                                 </tr>
                                 <tr>
                                     <td><label>Product Quantity:</label></td>
-                                    <td class="addbody"><input type="input" name="quantity" /></td>
+                                    <td class="addbody"><input type="input" name="quantity" value="<?php
+                                        if(isset($_GET['quantity'])){
+                                            echo "{$_GET['quantity']}";
+                                        }
+                                        ?>"/></td>
                                 </tr>
                                 <tr>
                                     <td><label>Product Category:</label></td>
-                                    <td class="addbody"><input type="input" name="category" /></td>
+                                    <td class="addbody"><input type="input" name="category" value="<?php
+                                        if(isset($_GET['category'])){
+                                            echo "{$_GET['category']}";
+                                        }
+                                        ?>"/></td>
                                     <input type="hidden" name="image" value="<?php echo 'Images/Uploads/' . $file_name;?>">
                                 </tr>
                                 </tbody>

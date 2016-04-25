@@ -2,7 +2,7 @@
 // Get the product data
 $error = "";
 $category = $_POST['category'];
-$descripton = $_POST['description'];
+$description = $_POST['description'];
 $quantity = $_POST['quantity'];
 $name = $_POST['name'];
 $price = $_POST['price'];
@@ -47,7 +47,7 @@ if(empty($error)){
     $query = "INSERT INTO products
                  ( Product_Title, Price, Quantity, Category, Product_Description, Image )
               VALUES
-                 ('$name', '$price', '$quantity', '$category', '$descripton','$image')";
+                 ('$name', '$price', '$quantity', '$category', '$description','$image')";
 
     $db->exec($query);
     // Display the Product List page

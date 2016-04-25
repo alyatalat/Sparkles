@@ -56,7 +56,7 @@
                         </ul>
                     </div>
 
-                    Thank you message goes here
+                    Thank you. Your message was received.
 
                 </div>
             </div>
