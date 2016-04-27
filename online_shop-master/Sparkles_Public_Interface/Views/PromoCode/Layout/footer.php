@@ -51,9 +51,9 @@
                 <div class="block_content toggle-footer" style>
                     <ul class="bullet">
                         <li class="item"> <a href="#">Today's Deal</a></li>
-                        <li class="item"> <a href="../Views/GiftCards/Views">Gift Cards</a></li>
+                        <li class="item"> <a href="../">Gift Cards</a></li>
                         <li class="item"> <a href="#">Contact Us</a></li>
-                        <li class="item"> <a href="../Views/faq.php">FAQ</a></li>
+                        <li class="item"> <a href="../../faq.php">FAQ</a></li>
                     </ul>
                 </div>
             </section>
@@ -63,7 +63,7 @@
                     <ul class="bullet">
                         <li> <a href="#">My Orders</a></li>
                         <li> <a href="#">My WishList</a></li>
-                        <li> <a href="../Views/CustomerLogin.php">My Info</a></li>
+                        <li> <a href="../../CustomerLogin.php">My Info</a></li>
                     </ul>
                 </div>
             </section>
@@ -84,7 +84,7 @@
                         <div class="form-group">
                             <input type="text" id="emailBox" name="email" size="20" />
                             <button type="submit" id="submitNewsletter" name="submitNewsletter" class="btn btn-link">
-                                <img src="../Images/arrow-right.png" alt="submit image" id="arrw" />
+                                <img src="../../../Images/arrow-right.png" alt="submit image" id="arrw" />
                             </button>
                         </div>
                         <span id="message"></span>

@@ -149,7 +149,7 @@
             <div class="col-md-12">
 
                 <div class="col-md-10 col-sm-8 col-xs-12 pull-right">
-                    <?php include ('../PromoCode/Index.php');?>
+                    <?php include('../PromoCode/Index.php');?>
                 </div>
 
                 <div class="col-md-10 col-sm-8 col-xs-12 pull-right">

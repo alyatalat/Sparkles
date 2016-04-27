@@ -13,13 +13,6 @@ body, #page-wrapper{
 
 }
 
-.gift-header-image{
-
-    background: url(../Images/giftcard.jpg) no-repeat center center;
-    background-size: cover;
-    opacity: 0.6;
-    height: 20rem;
-}
 
 #ribbon{
     background-color: #7d7d00;
@@ -46,12 +39,9 @@ margin-right: 30px;
 }
 
 #thankyou{
-    text-align: center;
-    font-size: 2.5em;
     border: 5px solid black;
     border-radius: 10px;
-    margin: 10% 30%;
-    height: 400px;
+    margin-right: 100px;
 }
 
 #gift_card_intro h1, #heading{
