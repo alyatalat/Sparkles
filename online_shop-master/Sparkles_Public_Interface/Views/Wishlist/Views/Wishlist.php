@@ -49,10 +49,10 @@ else{
 
 </head>
 <body>
-
+<div class="container">
 <!-- Display the selected product's details -->
-<div id="product-selected" style="float: left;margin-right: 30px;border: 1px solid black;border-radius: 5px;">
-    <img src="<?php echo $product[0]['image'] ?>" style="width: 350px; height: auto;border: 1px solid black;"/>
+<div id="product-selected" style="float: left;margin-right: 30px;">
+    <img src="<?php echo $product[0]['image'] ?>" style="width: 350px; height: auto;"/>
     <h3><?php echo $product[0]['title']; ?></h3>
     <h5><?php echo $product[0]['description']; ?></h5>
 </div>
@@ -74,9 +74,20 @@ else{
 
     <label>Enter Description:</label>
     <input type="text" name="wishlistDesc" value=""/>
-    <input type="submit" name="btnSubmit" value="Add New Wishlist"/>
+    <input type="submit" name="btnSubmit" class="btn btn-default" value="Add New Wishlist"/>
     <input type="hidden" name="productId" value="<?php echo $id; ?>"/>
+
 </form>
+
+<br/>
+<div id="showAll">
+    <form action="showWishlists.php" method="post">
+        <input type="submit" name="btnShowAll" class="btn btn-default" value="Show All Wishlists"/>
+        <input type="hidden" name="customerId" value="<?php echo $cid; ?>"/>
+    </form>
+</div>
+    <div id="status" style="font-size: 16px;color: red;text-align: center;"></div><br/>
+</div>
 </body>
 
 
@@ -105,15 +116,6 @@ else{
         $('#form1').show();
     }
 </script>
-<div id="status"></div>
-<br/>
-<div id="showAll">
-    <form action="showWishlists.php" method="post">
-        <input type="submit" name="btnShowAll" value="Show All Wishlists"/>
-        <input type="hidden" name="customerId" value="<?php echo $cid; ?>"/>
-    </form>
-</div>
-
 </html>
 
 
@@ -146,10 +148,10 @@ function displayWishLists()
         echo "<div id='wishlistName'>";
         echo $wname;
         echo "</div>";
-        echo "<input type='submit' value='Add to Wishlist' name='pushToList' id='pushToList' onclick=\"addtoList('$wid');\" />";
+        echo "<input type='submit' class='btn btn-default' value='Add to Wishlist' name='pushToList' id='pushToList' onclick=\"addtoList('$wid');\" />";
         echo "<br/><br/>";
     }
-    echo "<input type='submit' name='newWishlist' value='Create new Wishlist' onclick=\"newList();\"/>";
+    echo "<input type='submit' name='newWishlist' class='btn btn-default' value='Create new Wishlist' onclick=\"newList();\"/>";
 
 }
 ?>

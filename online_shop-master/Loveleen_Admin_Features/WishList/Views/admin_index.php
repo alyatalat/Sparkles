@@ -25,16 +25,24 @@ require_once("Layout/admin_header.php");
     {
         while($i<=5)
         {
+            echo "<div style='clear:left;'>";
             $pid = $result["Product_Id"];
-            echo "<b>Product Id:</b> ".$pid."<br/>";
             $product = wishlistsDB::getProduct($pid);
+
+            $img = "Layout/".$product['image'];
+            echo "<img src='$img' style='width: 200px; height: auto;border: 0px solid black;float: left;margin-right: 20px;'/>";
+            echo "<div>";
+            echo "<b>Product Id:</b> ".$pid."<br/>";
+
             echo "<b>Title:</b> ".$product['title']."<br/>";
             echo "<b>Description:</b> ".$product['description']."<br/>";
-            echo "<b>Image:</b> ".$product['image']."<br/>";
+
             echo "<b>Frequency:</b> ".$result["Frequency"];
+            echo "</div>";
             echo "<br/>";
             echo "<br/>";
             $i++;
+            echo "</div>";
             break;
         }
     }

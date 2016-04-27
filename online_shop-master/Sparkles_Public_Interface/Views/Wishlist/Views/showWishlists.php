@@ -5,6 +5,7 @@
         ?>
     </div>
 </div>
+<div class="container">
 <?php
 require_once('../Models/Database.php');
 require_once('../Models/Wishlists.php');
@@ -12,41 +13,44 @@ require_once('../Models/wishlistsDB.php');
 require_once ('../Models/wishlistDetailsDB.php');
 $db = Database::getDB();
 $cid = $_POST['customerId'];
-echo "<b>Wishlists you created:</b><br>";
+echo "<h1 style='text-align: center;'><b>Wishlists you created:</b></h1>";
 $wishlists = wishlistsDB::getWishlistsByCustomer($cid);
 foreach($wishlists as $wishlist)
 {
-    echo "<hr/><br/>";
+    echo "<hr/><br/><div>";
     $wid = $wishlist->getWishlistId();
-    echo $wid;
-    echo "Wishlist name: ";
+   // echo $wid;
+    echo "<b>Wishlist name:</b>&nbsp; ";
     echo $wishlist->getWishlistName();
-    echo "<br/>Description you added:";
+    echo "<br/><b>Description you added:</b>&nbsp;";
     echo $wishlist->getWishlistNote();
-    echo "<br/>Created on:";
+    echo "<br/><b>Created on:</b>&nbsp;";
     echo $wishlist->getWishlistDate();
     echo "<br/><br/>";
     $products = wishlistsDetailsDB::showProducts($wid);
-    //var_dump($stmt);
     $i=0;
     foreach($products as $product)
     {
+        echo "<div style='clear: left;'>";
         $pid = $product['Product_Id'];
-        echo "Product Id: ".$product['Product_Id']."<br/>";
-        echo "Product Title: ".$product['Product_Title']."<br/>";
-        echo "Product Description: ".$product['Product_Description']."<br/>";
-      echo "<img src=\"<?php echo $product[$i]['Image'] ?>\" style=\"width: 50px; height: auto;border: 1px solid black;\"/>";
-        echo "<input type='submit' name='removeProduct' value='Delete from the wishlist' onclick=\"removeProduct($pid,$wid); \"/>";
-        echo "<br/>";
+        $img = $product['Image'];
+        echo "<img src='$img' style='width: 200px; height: auto;border: 0px solid black;float: left;margin-right: 10px;'/>";
+        echo "<b>Product Id: </b>&nbsp;".$product['Product_Id']."<br/>";
+        echo "<b>Product Title:</b>&nbsp; ".$product['Product_Title']."<br/>";
+        echo "<b>Product Description:</b>&nbsp; ".$product['Product_Description']."<br/>";
+        echo "<input type='submit' name='removeProduct' class='btn btn-default' value='Delete this item from the wishlist' onclick=\"removeProduct($pid,$wid); \"/>";
+        echo "<br/><br/>";
 
         $i++;
+        echo "</div>";
     }
-    echo "<input type='submit' name='editWishlist' value='Rename Wishlist' onclick=\"editWishlist($wid); \"/>";
-    echo "<input type='submit' name='deleteWishlist' value='Delete Wishlist' onclick=\"delWishlist($wid);\" />";
+    echo "<input type='submit' name='editWishlist' value='Rename Wishlist' class='btn btn-default' onclick=\"editWishlist($wid); \"/>";
+    echo "<input type='submit' name='deleteWishlist' value='Delete Wishlist' class='btn btn-default' onclick=\"delWishlist($wid);\" />";
     echo "<input type='hidden' name='wishlistId' value='<?php echo $wid; ?>' />";
+    echo "</div><br/>";
 }
 ?>
-
+</div>
 <html>
 <head>
     <title>Sparkles</title>
@@ -145,7 +149,7 @@ foreach($wishlists as $wishlist)
 </head>
 
 <body>
-<div id="status"></div>
+<div id="status" class="container"></div>
 </body>
 <div class="container-fluid">
     <div class="row">
