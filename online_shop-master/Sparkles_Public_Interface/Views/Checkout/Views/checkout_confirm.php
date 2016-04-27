@@ -7,9 +7,9 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 <!-- Optional theme -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-<link rel="stylesheet" href="../../Stylesheets/echo-index.css" />
-<link rel="stylesheet" href="../../Stylesheets/cart.css" />
-<script src="../../Scripts/cartjs.js"></script>
+<link rel="stylesheet" href="../../../Stylesheets/echo-index.css" />
+<link rel="stylesheet" href="../../../Stylesheets/cart.css" />
+<script src="../../../Scripts/cartjs.js"></script>
 
 <div class="col-md-9 col-sm-8 col-xs-12 pull-left">
 <div class="row">
@@ -36,6 +36,48 @@
             <div class="row setup-content" id="step-1">
                 <div class="col-xs-6">
                     <div class="col-md-12">
+                        <h3>Change Billing Address</h3>
+                        <div id="billingaddress" class="col-md-9 col-sm-6 col-xs-12">
+                            <h2>Billing Address</h2>
+
+                            <?php
+                            $cust_id=1;
+                            $bill_add = getbilling_address($cust_id);
+
+                            if(isset($_POST['newadd']))
+                                if($_POST['newadd']!="")
+                                {
+                                    $bill_add[0] = $_POST['newadd'];
+                                }?>
+
+                            <form method="post" action="" >
+                                <label>Billing Address:</label>
+                                <?php echo $bill_add[0]; ?>
+                                <?php if (isset($_POST['edit'])){?>
+                                    <br/>
+                                    <form method="post" action="">
+
+                                        <input type="text" name="newadd"/>
+                                        <input type="submit" name="edit" value="Save">
+
+                                    </form>
+                                    <?php
+
+                                }
+                                ?>
+                                <input type="submit" name="edit" value="Edit Address">
+
+
+                            </form>
+                        </div>
+                        <button class="btn btn-primary nextBtn btn-lg pull-right" type="button" >Next</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row setup-content" id="step-2">
+                <div class="col-xs-6">
+                    <div class="col-md-12">
+
                         <h3> Confirm Order</h3>
                         <table id="checkoutcart" class="col-md-7 col-sm-8 col-xs-10">
                             <tr id="cart_header">
@@ -98,46 +140,13 @@
                         </table>
 
 
-                        <button class="btn btn-primary nextBtn btn-lg pull-right" type="button" >Next</button>
-                    </div>
-                </div>
-            </div>
-            <div class="row setup-content" id="step-2">
-                <div class="col-xs-6">
-                    <div class="col-md-12">
-                        <div id="billingaddress" class="col-md-9 col-sm-6 col-xs-12">
-                            <h2>Billing Address</h2>
-
-                            <?php
-                            $cust_id=1;
-                            $bill_add = getbilling_address($cust_id);
-
-                            if(isset($_POST['newadd']))
-                                if($_POST['newadd']!="")
-                                {
-                                    $bill_add[0] = $_POST['newadd'];
-                                }?>
-
-                            <form method="post" action="" >
-                                <label>Billing Address:</label>
-                                <?php echo $bill_add[0]; ?>
-                                <?php if (isset($_POST['edit'])){?>
-                                    <br/>
-                                    <form method="post" action="">
-
-                                        <input type="text" name="newadd"/>
-                                        <input type="submit" name="edit" value="Save">
-
-                                    </form>
-                                    <?php
-
-                                }
-                                ?>
-                                <input type="submit" name="edit" value="Edit Address">
 
 
-                            </form>
-                        </div>
+
+
+
+
+
 
                     </div>
                     <button class="btn btn-primary nextBtn btn-lg pull-right" type="button" >Next</button>
@@ -149,7 +158,7 @@
             <div class="col-md-12">
 
                 <div class="col-md-10 col-sm-8 col-xs-12 pull-right">
-                    <?php include('../PromoCode/Index.php');?>
+                    <?php include('../../PromoCode/Views/Index.php');?>
                 </div>
 
                 <div class="col-md-10 col-sm-8 col-xs-12 pull-right">

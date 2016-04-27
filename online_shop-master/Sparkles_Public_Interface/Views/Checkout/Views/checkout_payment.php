@@ -1,5 +1,5 @@
 <?php
-require_once ('checkout_confirm.php');
+require_once('checkout_confirm.php');
 require_once('../Stripe/init.php');
 \Stripe\Stripe::setApiKey('sk_test_D9304X01pM2xqrv7Zkr3E48t');
 

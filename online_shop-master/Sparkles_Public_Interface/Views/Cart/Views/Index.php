@@ -206,7 +206,7 @@ default:
     <div class="col-md-2 col-sm-6 col-xs-6 pull-right">
                 <?php if (cart_product_count() > 0) : ?>
                 <p>
-                    Proceed to: <a href="../checkout">Checkout</a>
+                    Proceed to: <a href="../../checkout/Views">Checkout</a>
                 </p>
             <?php endif; ?>
     </div>

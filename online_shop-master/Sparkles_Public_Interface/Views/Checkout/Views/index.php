@@ -1,9 +1,9 @@
 <?php
-require_once('../../model/database.php');
-require_once('../../model/validation.php');
-require_once('../../model/cart.php');
-require_once('../../model/order_db.php');
-require_once('../../model/promocode_db.php');
+require_once('../model/database.php');
+require_once('../model/validation.php');
+require_once('../model/cart.php');
+require_once('../model/order_db.php');
+require_once('../model/promocode_db.php');
 
 ?>
 
@@ -15,12 +15,12 @@ require_once('../../model/promocode_db.php');
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 <!-- Optional theme -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-<link rel="stylesheet" href="../../Stylesheets/echo-index.css" />
-<link rel="stylesheet" href="../../Stylesheets/cart.css" />
+<link rel="stylesheet" href="../../../Stylesheets/echo-index.css" />
+<link rel="stylesheet" href="../../../Stylesheets/cart.css" />
 <div class="container-fluid">
     <div class="row">
         <?php
-        require_once("../../Layout/header.php");
+        require_once("../Layout/header.php");
         ?>
     </div>
 </div>
@@ -70,8 +70,8 @@ require_once('../../model/promocode_db.php');
                     <div class="nav">
                         <ul class="breadcrumb">
                             <li><a href="HomeIndex.php">Home</a></li>
-                            <li><a href="../Cart">Shopping Cart</a></li>
-                            <li><a href=".">Checkout</a></li>
+                            <li><a href="../../Cart">Shopping Cart</a></li>
+                            <li><a href="../">Checkout</a></li>
                         </ul>
                     </div>
                 </div>
@@ -110,7 +110,7 @@ switch ($action) {
             $code = $_POST['promocode'];
             $discount = PromoCodeDB::getDiscountPromoCode($code);
         }
-        include_once ('checkout_confirm.php');
+        include_once('checkout_confirm.php');
         break;
 
     case 'payment':
