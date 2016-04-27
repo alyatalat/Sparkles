@@ -24,6 +24,14 @@ class GiftCardDB {
 
     }
 
+    public static function getGiftId($id){
+        $db=Database::getDB();
+        $query='select Image_src from gift_cards where Gift_Id='.$id;
+        $result = $db->query($query);
+        $result_back=$result->fetch();
+        return $result_back;
+    }
+
     public static function addGiftCard($title, $description, $img_src){
         //query to insert in the gift cards table
         $db = Database::getDB();

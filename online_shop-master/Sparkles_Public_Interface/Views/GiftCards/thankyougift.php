@@ -27,6 +27,7 @@ $error="";
 $sent_to=$_POST['email_to'];
 $message=$_POST['message'];
 $amount=$_POST['amount'];
+$stripe_amount = $amount*100;
 $payment=$_POST['payment'];
 
 $id=$_POST['id'];
@@ -59,7 +60,7 @@ $token = $_POST['stripeToken'];
 // Create the charge on Stripe's servers - this will charge the user's card
 try {
     $charge = \Stripe\Charge::create(array(
-        "amount" => 1000, // amount in cents, again
+        "amount" => $stripe_amount, // amount in cents, again
         "currency" => "cad",
         "source" => $token,
         "description" => "Example charge"
@@ -79,11 +80,11 @@ $db->exec($query);
 
 ?>
 
-<div id="main">
+<div id="main" class="container-fluid">
 <!--thank you message on the page-->
-
-<p>Thank you for buying the gift cart for the value $ <?php echo $amount?>, we will deliver your gift card to <?php echo $sent_to; ?>
-    in 2 to 3 business days.</p>
+<div class="row" >
+<h2 id="thankyou" class="col-md-6 pull-right">Thank you for buying the gift cart for the value $ <?php echo $amount?>, we will deliver your gift card to <?php echo $sent_to?>
+    in 2 to 3 business days.</h2>
 </div> <!-- This closing tag must be at the end of your main content!! -->
 </div>
 <?php
