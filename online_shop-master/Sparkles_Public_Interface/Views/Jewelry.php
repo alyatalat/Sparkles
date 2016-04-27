@@ -94,7 +94,7 @@ $products = $db->query($query);
                             <div class="ProductPrice"><?php echo $product['Price'];?></div>
                             <li><button>Add To Cart</button></li>
                             <li><a href="Wishlist/Views/Wishlist.php?id=<?php echo $product['Product_Id']; ?>">Add To Wishlist</a></li>
-                            <li><a href="#">Rate this item</a></li>
+                            <li><a href="Ratings/Views/Rating.php?id=<?php echo $product['Product_Id']; ?>">Rate this item</a>
                         </ul>
                     <?php endforeach; ?>
                 </div>

@@ -105,7 +105,7 @@ $products = $db->query($query);
                                 <input type="submit" value="Add to Cart" />
                             </form></li>
                         <li><a href="Wishlist/Views/Wishlist.php?id=<?php echo $product['Product_Id']; ?>">Add To Wishlist</a></li>
-                        <li><a href="#">Rate this item</a></li>
+                        <li><a href="Ratings/Views/Rating.php?id=<?php echo $product['Product_Id']; ?>">Rate this item</a>
                     </ul>
                 <?php endforeach; ?>
             </div>

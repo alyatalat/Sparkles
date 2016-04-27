@@ -10,13 +10,42 @@
 <?php
 require_once("Layout/admin_header.php");
 ?>
+<div id="main">
+    Select Category: <select name="category" id="category">
+    </select>
+    <div id="prodlist">
+    </div>
+    <script>
+        $(document).ready(function(){
+            $.getJSON('adminRatingCategories.php', function(data){
+                var cat = "";
+                $.each(data, function(index,category){
 
+                    cat += '<option value="' + category.category + '">' + category.category + '</option>';
+                })
+                $('#category').html(cat);
+            });
 
+            $('#category').change(function(){
+                var cateee = $('#category').val();
+                //alert(cateee);
+                $.getJSON('getProductsFromCategory.php',{cat : cateee}, function (data) {
+                    var result ="<ul>";
+                    $.each(data, function(index,product){
+                        result += "<li>"+product.Product_Id+ product.Product_Title+ product.Product_Description+ product.Rating+product.Votes+"</li>";
+                        var pid = product.Product_Id;
+                        result += "<form method='post' action='productDetails.php'>" +
+                            "<input type='submit' value='View Details'>" +
+                            "<input type='hidden' value='"+pid+"' name='Id'>"    +
+                            "</form>";
+                    });
+                    result += "</ul>";
 
-    This is the main page
-    Your content should be in here
-
-
+                    $('#prodlist').html(result);
+                });
+            })
+        });
+    </script>
 </div> <!-- This closing tag must be at the end of your main content!! -->
 
 <?php
