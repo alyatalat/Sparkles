@@ -95,7 +95,7 @@ $products = $db->query($query);
                         <!-- code by Loveleen Anand for currency exchange -->
 
                       <div class="ProductPrice"><?php echo $product['Price'];?></div>
-                        <li><form action= "Cart" method="get"
+                        <li><form action= "Cart/Views" method="get"
                                   id="add_to_cart_form">
                                 <input type="hidden" name="action" value="add" />
 
