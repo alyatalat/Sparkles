@@ -101,7 +101,10 @@ require_once 'addRating.php';
             <div class="container-fluid">
                 <div class="row">
                     <div class="products">
-                        <?php echo '<img src="../../Images/'. $product->getImage() .'" alt="product image" width="150" height="150 style=\"align=left \""/>'; ?>
+                        <?php
+                        $img = $product->getImage();
+                        ?>
+                        <?php echo '<img src="'. $img .'" alt="product image" width="150" height="150 style=\"align=left \""/>'; ?>
                         <div class="product-info" style="padding-left: 50px;">
                             Title: <?php echo $product->getTitle(); ?> <br>
                             Description:<?php echo $product->getDescription();?>

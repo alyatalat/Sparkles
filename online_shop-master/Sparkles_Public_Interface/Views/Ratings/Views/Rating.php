@@ -104,13 +104,14 @@ require_once 'addRating.php';
             <div class="container-fluid">
                 <div class="row">
                     <div class="products">
-                        <?php echo '<img src="../../Images/'. $product->getImage() .'" alt="product image" width="150" height="150 style=\"align=left \""/>'; ?>
+                        <?php echo '<img src="../'. $product->getImage() .'" alt="product image" width="150" height="150 style=\"align=left \""/>'; ?>
                         <div class="product-info" style="padding-left: 50px;">
                             Title: <?php echo $product->getTitle(); ?> <br>
                             Description:<?php echo $product->getDescription();?>
                             <div class="product-rating">Average rating: <?php
                                 $rate = RatingDB::getAverage($id);
-                                $avg= round($rate['rate'],2);
+                              //  $avg= round($rate['rate'],2);
+                                $avg= round($rate['rate']);
                                 echo $avg."/5 stars \t";
                                 if($avg == 0)
                                 {
