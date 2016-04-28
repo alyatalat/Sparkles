@@ -17,6 +17,6 @@ if (empty($Code) || empty($Exp_Date) || empty($Amount) ) {
     PromoCodeDB::addPromoCode($Code,$Exp_Date,$Amount);
 
     // Display the Product List page
-   //header('location: admin_index.php');
+   header('location: admin_index.php');
 }
 ?>

@@ -15,6 +15,6 @@ if (empty($title) || empty($description) || empty($img_src) ) {
     require_once('../model/giftcard_db.php');
     GiftCardDB::addGiftCard($title, $description, $img_src);
     // Display the Product List page
-   header('location: Index.php');
+   header('location: admin_index.php');
 }
 ?>

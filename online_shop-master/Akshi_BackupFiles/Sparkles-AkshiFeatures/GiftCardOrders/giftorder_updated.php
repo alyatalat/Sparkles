@@ -22,7 +22,7 @@ if (empty($cust_id) || empty($gift_id) || empty($sent_to) || empty($amt) || empt
 
    // unset($_SESSION['GiftSent_Id']);
     // Display the Product List page
-   header('location: Index.php');
+   header('location: admin_index.php');
 }
 ?>
 

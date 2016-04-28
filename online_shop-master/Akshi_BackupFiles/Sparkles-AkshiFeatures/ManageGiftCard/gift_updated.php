@@ -21,7 +21,7 @@ if (empty($title) || empty($description) || empty($img_src) ) {
 
 
     // Display the Product List page
-   header('location: Index.php');
+   header('location: admin_index.php');
     unset($_SESSION['gift_id']);
 }
 ?>

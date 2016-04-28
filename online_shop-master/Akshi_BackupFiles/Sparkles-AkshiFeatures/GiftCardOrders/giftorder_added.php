@@ -21,6 +21,6 @@ if (empty($cust_id) || empty($gift_id) || empty($sent_to) || empty($mode) ||empt
     GiftCardOrderDB::addGiftCardOrder($cust_id,$gift_id,$sent_to, $amt, $msg, $mode);
 
     // Display the Product List page
-   header('location: Index.php');
+   header('location: admin_index.php');
 }
 ?>

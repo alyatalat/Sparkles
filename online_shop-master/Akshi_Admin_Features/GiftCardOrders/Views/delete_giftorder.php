@@ -7,7 +7,7 @@ require_once('../model/database.php');
 require_once('../model/giftcardorder_db.php');
 GiftCardOrderDB::deleteGiftOrder($gift_id);
 
-header('location: Index.php');
+header('location: admin_index.php');
 ?>
 
 </div>

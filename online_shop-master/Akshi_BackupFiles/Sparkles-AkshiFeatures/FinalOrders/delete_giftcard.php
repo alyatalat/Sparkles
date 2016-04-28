@@ -7,5 +7,5 @@ require_once('../model/database.php');
 require_once('../model/giftcard_db.php');
 GiftCardDB::deleteGiftCard($gift_id);
 
-header('location: Index.php');
+header('location: admin_index.php');
 ?>
