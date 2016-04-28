@@ -25,8 +25,9 @@ $orders = getall_orders();
 ?>
 <!--include the table with details of the gift cards like title, description and image source-->
 <div id="main">
-    <h1 id="heading">Manage Orders</h1>
-    <table id="table-view"><tr>
+    <h3 class="text-center title">Manage Orders</h3>
+    <table class="table table-hover table-condensed text-left">
+        <tr>
             <th>Customer Id</th>
             <th>Order Date</th>
             <th>Total Amount</th>
@@ -53,6 +54,16 @@ $orders = getall_orders();
                         <input type="hidden" name="Order_Id"
                                value="<?php echo $gc['Order_Id']; ?>" />
                         <input type="submit" value="Delete" />
+                    </form>
+
+                </td>
+
+                <td>
+                    <!--when the user clicks on details the id is sent as a hidden field-->
+                    <form action="details_order.php" method="post" id="details_order">
+                        <input type="hidden" name="Order_Id"
+                               value="<?php echo $gc['Order_Id']; ?>" />
+                        <input type="submit" value="Details" />
                     </form>
 
                 </td>

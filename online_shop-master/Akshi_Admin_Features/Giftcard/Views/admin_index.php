@@ -24,8 +24,10 @@ $gift_card = GiftCardDB::getGifts();
 ?>
 <!--include the table with details of the gift cards like title, description and image source-->
 <div id="main">
+    <a href="../../GiftCardOrders/Views/admin_index.php">Manage Gift Orders</a>
     <h1 id="heading">Manage Gift Cards</h1>
-    <table id="table-view"><tr>
+    <table class="table table-hover table-condensed text-left">
+        <tr>
             <th>Title</th>
             <th>Description</th>
             <th>Image Source</th>

@@ -219,9 +219,6 @@ default:
 
 
     </div>
-<div class="col-md-10 col-sm-8 col-xs-12 pull-right">
-    <?php include('../../PromoCode/Views/Index.php');?>
-</div>
 
             </div>
 

@@ -159,6 +159,9 @@
     <div class="row setup-content" id="step-3">
         <div class="col-xs-6">
             <div class="col-md-12">
+                <div class="col-md-10 col-sm-8 col-xs-12 pull-right">
+                    <?php include('../../PromoCode/Views/Index.php');?>
+                </div>
 
 
                 <div class="col-md-10 col-sm-8 col-xs-12 pull-right">
