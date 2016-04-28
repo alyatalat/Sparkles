@@ -140,7 +140,7 @@ foreach($images as $image){
                     </a>
                 </li>
                 <li>
-                    <a href="Deals.php">Today's Deals</a>
+                    <a href="TodaysDeal.php">Today's Deals</a>
                 </li>
                 <li>
                     <a href="#">Sort Products</a>

@@ -30,8 +30,10 @@
                         }
                         else if(data===false){
                             $.getJSON('../Views/Subescriber/addSubscriber.php',{email : email}, function (data) {
-                                $('#message').html(data);
+
                             });
+                            var message="You have successfully subscribed to our newsletter.";
+                            $('#message').html(message);
                         }
                     });
                 }
@@ -50,7 +52,7 @@
                 <h4 class="navtitle">Information<span class="plus minus">+</span></h4>
                 <div class="block_content toggle-footer" style>
                     <ul class="bullet">
-                        <li class="item"> <a href="#">Today's Deal</a></li>
+                        <li class="item"> <a href="../Views/TodaysDeal.php">Today's Deal</a></li>
                         <li class="item"> <a href="../Views/GiftCards/Views">Gift Cards</a></li>
                         <li class="item"> <a href="#">Contact Us</a></li>
                         <li class="item"> <a href="../Views/faq.php">FAQ</a></li>
