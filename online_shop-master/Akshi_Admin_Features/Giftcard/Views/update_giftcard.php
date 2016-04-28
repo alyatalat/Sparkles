@@ -116,7 +116,7 @@ $files = get_file_list($image_dir_path);
             <br/>
             <input type="submit" value="Update" name="Update">
         </form>
-        <p><a href="admin_index.php">View Gift Card List</a></p>
+        <p><a href="Index.php">View Gift Card List</a></p>
     </div>
 
 </div>

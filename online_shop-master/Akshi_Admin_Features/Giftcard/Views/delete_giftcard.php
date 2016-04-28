@@ -24,7 +24,7 @@ GiftCardDB::deleteGiftCard($gift_id);
 
 echo "The record has been deleted successfully";
 ?>
-<p><a href="admin_index.php">View Gift Card List</a></p>
+<p><a href="Index.php">View Gift Card List</a></p>
 
 
 

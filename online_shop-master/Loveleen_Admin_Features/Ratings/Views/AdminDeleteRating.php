@@ -7,5 +7,5 @@ $db = Database::getDB();
 $results = AdminDB::DeleteRating($pid,$cid);
 if ($results == 1) {
     echo "Deleted Successfully";
-    header('Location: ../Views/admin_index.php');
+    header('Location: ../Views/Index.php');
 }
