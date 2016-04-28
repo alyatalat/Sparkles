@@ -62,10 +62,10 @@
                 </div>
             </li>
             <li class="menu-item faq">
-                <a href="../../../Soo-Ah_Admin_Features/FAQ/Views/admin_index.php" class="link"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
+                <a href="../../../Soo-Ah_Admin_Features/FAQ/Views/faq_admin.php" class="link"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
                     <span class="admin_list">FAQ</span></a>
                 <div class="mobile_menu">
-                    <a href="../../../Soo-Ah_Admin_Features/FAQ/Views/admin_index.php">FAQ</a>
+                    <a href="../../../Soo-Ah_Admin_Features/FAQ/Views/faq_admin.php">FAQ</a>
                 </div>
 
             </li>
