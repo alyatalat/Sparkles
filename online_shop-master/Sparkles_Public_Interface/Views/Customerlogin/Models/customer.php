@@ -10,37 +10,27 @@ class customer
 {
     private $conn;
 
-/*    public function __construct()
-    {
-        $database = new Database();
-        $db = $database->dbConnection();
-        $this->conn = $db;
-    }*/
 
     public function runQuery($sql)
     {
         require_once('database.php');
         require_once('dbclass.php');
         $db = Dbclass::getDB();
-          $stmt = $db->prepare($sql);
-  //      $stmt = $this->conn->prepare($sql);
+        $stmt = $db->prepare($sql);
         return $stmt;
     }
 
-    public function register($usermail,$userpass)
+    public function register($email,$password)
     {
         try
         {
-            $new_password = password_hash($userpass, PASSWORD_DEFAULT);
             require_once('database.php');
             require_once('dbclass.php');
             $db = Dbclass::getDB();
-            $stmt = $db->prepare("INSERT INTO users(user_email,user_pass)
-		                                               VALUES( :usermail, :userpass)");
-            $stmt->bindparam(":usermail", $usermail);
-            $stmt->bindparam(":userpass", $new_password);
+            $stmt = $db->prepare("INSERT INTO customer (Email,Password) VALUES( :usermail, :userpass)");
+            $stmt->bindparam(":usermail", $email);
+            $stmt->bindparam(":userpass", $password);
             $stmt->execute();
-
             return $stmt;
         }
         catch(PDOException $e)
@@ -54,19 +44,18 @@ class customer
     {
         try
         {
-            require_once('database.php');
             require_once('dbclass.php');
             $db = Dbclass::getDB();
-            $stmt = $db->prepare("SELECT user_id, user_email, user_pass FROM users WHERE user_email=:umail ");
+            $stmt = $db->prepare("SELECT Customer_Id, Email, Password FROM customer WHERE Email=:umail ");
             $stmt->execute(array(':umail'=>$umail));
             $userRow=$stmt->fetch(PDO::FETCH_ASSOC);
-
-
             if($stmt->rowCount() == 1)
             {
-                if(password_verify($upass, $userRow['user_pass']))
+                // if passwords matching then login and create session based on id of customer
+                if($upass == $userRow['Password'])
                 {
-                    $_SESSION['user_session'] = $userRow['user_id'];
+                  //  echo "here";
+                    $_SESSION['user_session'] = $userRow['Customer_Id'];
                     return true;
                 }
                 else

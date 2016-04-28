@@ -12,7 +12,7 @@ if(!$auth_user->is_loggedin())
 }
 require_once("Layout/header.html");
 $user_id = $_SESSION['user_session'];
-$stmt = $auth_user->runQuery("SELECT * FROM users WHERE user_id=:user_id");
+$stmt = $auth_user->runQuery("SELECT * FROM customer WHERE Customer_Id=:user_id");
 $stmt->execute(array(":user_id"=>$user_id));
 $userRow=$stmt->fetch(PDO::FETCH_ASSOC);
 ?>
@@ -41,7 +41,7 @@ $userRow=$stmt->fetch(PDO::FETCH_ASSOC);
                 <ul class="nav navbar-nav navbar-right">
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                            <span class="glyphicon glyphicon-user"></span>&nbsp;Hello <?php echo $userRow['user_email']; ?>&nbsp;<span class="caret"></span></a>
+                            <span class="glyphicon glyphicon-user"></span>&nbsp;Hello <?php echo $userRow['Email']; ?>&nbsp;<span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="profile.php"><span class="glyphicon glyphicon-user"></span>&nbsp;View Profile</a></li>
                             <li><a href="logout.php?logout=true"><span class="glyphicon glyphicon-log-out"></span>&nbsp;Sign Out</a></li>
@@ -55,7 +55,7 @@ $userRow=$stmt->fetch(PDO::FETCH_ASSOC);
 <div class="clearfix"></div>
 <div class="container-fluid" style="margin-top:80px;">
     <div class="container">
-        <label class="h5">welcome : <?php echo($userRow['user_email']); ?></label>
+        <label class="h5">welcome : <?php echo($userRow['Email']); ?></label>
         <hr />
         <h1>
             <a href="customerHome.php"><span class="glyphicon glyphicon-home"></span> Your Account</a> &nbsp;
