@@ -146,32 +146,34 @@
 
             </li>
             <li class="menu-item promo">
-                <a href="../Akshi_Admin_Features/Promo/Views/admin_index.php" class="link"><span class="glyphicon glyphicon-credit-card" aria-hidden="true"></span>
+                <a href="../Akshi_Admin_Features/ManagePromoCard/Views/" class="link"><span class="glyphicon glyphicon-credit-card" aria-hidden="true"></span>
                     <span class="admin_list">Promo Card</span></a>
 
                 <div class="mobile_menu">
-                    <a href="../Akshi_Admin_Features/Promo/Views/admin_index.php">Promo Card</a>
+                    <a href="../Akshi_Admin_Features/ManagePromoCard/Views/">Promo Card</a>
                 </div>
 
             </li>
             <li class="menu-item shopping">
-                <a href="../Akshi_Admin_Features/ShoppingCart/Views/admin_index.php" class="link"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
-                    <span class="admin_list">Shopping Cart</span></a>
+                <a href="../Akshi_Admin_Features/FinalOrders/Views/" class="link"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+                    <span class="admin_list">Shopping Orders</span></a>
 
                 <div class="mobile_menu">
-                    <a href="Akshi_Admin_Features/ShoppingCart/Views/admin_index.php">Shopping Cart</a>
+                    <a href="Akshi_Admin_Features/FinalOrders/Views/">Shopping Cart</a>
                 </div>
 
             </li>
             <li class="menu-item giftcard">
-                <a href="../Akshi_Admin_Features/Giftcard/Views/admin_index.php" class="link"><span class="glyphicon glyphicon-gift" aria-hidden="true"></span>
-                    <span class="admin_list">Giftcard</span></a>
+                <a href="../Akshi_Admin_Features/ManageGiftcard/Views/" class="link"><span class="glyphicon glyphicon-gift" aria-hidden="true"></span>
+                    <span class="admin_list">Giftcards</span></a>
 
                 <div class="mobile_menu">
-                    <a href="../Akshi_Admin_Features/Giftcard/Views/admin_index.php">Giftcard</a>
+                    <a href="../Akshi_Admin_Features/ManageGiftcard/Views/">Giftcard</a>
                 </div>
 
             </li>
+
+
 
 
         </ul>

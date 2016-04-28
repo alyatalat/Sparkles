@@ -8,4 +8,4 @@
         <p><a href="FinalOrders">Orders</a> </p>
         <p><a href="ManageGiftCard">Gift Card Manager</a></p>
         <p><a href="GiftCardOrders">Manage GiftCard Orders</a> </p>
-        <p><a href="ManagePromoCodes">Manage Promo Code</a> </p>
+        <p><a href="ManagePromoCode">Manage Promo Code</a> </p>
