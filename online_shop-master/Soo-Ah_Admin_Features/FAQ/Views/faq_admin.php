@@ -42,7 +42,9 @@ $categories = $tempo->getCategories();
         <tr>
             <td><?php echo $category['faq_category_name']; ?></td>
             <td><?php echo $category['faq_category_order']; ?></td>
-            <td><a href="edit_faq_category.php?faq_id=<?php echo $category['faq_category_id'];?>" class="faq_link">[Edit]</a>&nbsp;<a href="../Controller/delete_faq_category.php?faq_id=<?php echo $category['faq_category_id'];?>&faq_order=<?php echo $category['faq_category_order']?>" onclick="return confirm('Are you sure you want to delete?')" class="faq_link">[Delete]</a></td>
+            <td><a href="edit_faq_category.php?faq_id=<?php echo $category['faq_category_id'];?>" class="faq_link">[Edit]</a>&nbsp;<a href="../Controller/delete_faq_category.php?faq_id=<?php echo $category['faq_category_id'];?>&faq_order=<?php echo $category['faq_category_order']?>" onclick="return confirm('Are you sure you want to delete?')" class="faq_link">[Delete]</a>
+            <a href="question_list.php?faq_id=<?php echo $category['faq_category_id'];?>" class="faq_link">[Question List]</a>
+            </td>
         </tr>
         <?php } ?>
     </table>
