@@ -4,13 +4,7 @@ require_once ('../Models/Price_Convert.php');
 require_once ('../Models/ConversionDB.php');
 session_start();
 ?>
-<div class="container-fluid">
-    <div class="row">
-        <?php
-        require_once("Layout/admin_header.php");
-        ?>
-    </div>
-</div>
+
 <script
     src="https://code.jquery.com/jquery-2.2.2.min.js"
     integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI="
@@ -21,11 +15,13 @@ session_start();
 <!-- Optional theme -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 <link rel="stylesheet" href="Layout/Style/admin.css" />
-
+<?php
+require_once("Layout/admin_header.php");
+?>
 
 
 <div id="main">
-    <button id='currencies' type="submit" value="USDCAD" onclick="search_dollar(this.value);">Get the USD Value</button>
+    <button id='currencies' type="submit" value="USDCAD" class="btn btn-default btn-lg" onclick="search_dollar(this.value);">Get the USD Value</button>
     <div id="showPrice"></div>
     <script>
         function search_dollar(val)
@@ -50,7 +46,7 @@ session_start();
                             console.log(textstatus);
                         }
                     });
-                    document.getElementById("showPrice").innerHTML = "The value for Canadian Dollar is "+rate;
+                    document.getElementById("showPrice").innerHTML = "The value for Canadian Dollar as compared to US Dollar is "+rate;
                 }
             });
         }
