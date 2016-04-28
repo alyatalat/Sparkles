@@ -78,10 +78,10 @@
                 </div>
             </li>
             <li class="menu-item faq">
-                <a href="../../../Soo-Ah_Admin_Features/FAQ/Views/admin_index.php" class="link"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
+                <a href="../../../Soo-Ah_Admin_Features/FAQ/Views/faq_admin.php" class="link"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
                     <span class="admin_list">FAQ</span></a>
                 <div class="mobile_menu">
-                    <a href="../../../Soo-Ah_Admin_Features/FAQ/Views/admin_index.php">FAQ</a>
+                    <a href="../../../Soo-Ah_Admin_Features/FAQ/Views/faq_admin.php">FAQ</a>
                 </div>
 
             </li>
@@ -128,11 +128,11 @@
 
             </li>
             <li class="menu-item imageslider selectedItem">
-                <a href="../../../Soo-Ah_Admin_Features/ImageSlider/Views/admin_index.php" class="link"><span class="glyphicon glyphicon-picture" aria-hidden="true"></span>
+                <a href="../../../Soo-Ah_Admin_Features/ImageSlider/Views/image_admin.php" class="link"><span class="glyphicon glyphicon-picture" aria-hidden="true"></span>
                     <span class="admin_list">Image Slider</span></a>
 
                 <div class="mobile_menu">
-                    <a href="../../../Soo-Ah_Admin_Features/ImageSlider/Views/admin_index.php">Image Slider</a>
+                    <a href="../../../Soo-Ah_Admin_Features/ImageSlider/Views/image_admin.php">Image Slider</a>
                 </div>
 
             </li>

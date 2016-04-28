@@ -113,11 +113,11 @@
 
             </li>
             <li class="menu-item imageslider">
-                <a href="../../../Soo-Ah_Admin_Features/ImageSlider/Views/admin_index.php" class="link"><span class="glyphicon glyphicon-picture" aria-hidden="true"></span>
+                <a href="../../../Soo-Ah_Admin_Features/ImageSlider/Views/image_admin.php" class="link"><span class="glyphicon glyphicon-picture" aria-hidden="true"></span>
                     <span class="admin_list">Image Slider</span></a>
 
                 <div class="mobile_menu">
-                    <a href="../../../Soo-Ah_Admin_Features/ImageSlider/Views/admin_index.php">Image Slider</a>
+                    <a href="../../../Soo-Ah_Admin_Features/ImageSlider/Views/image_admin.php">Image Slider</a>
                 </div>
 
             </li>
