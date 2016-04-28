@@ -38,29 +38,6 @@ $entry = $db->query($query);
     <h3 class="text-center title">Customer Feedback Messages</h3>
     <br/>
 
-    <div class="panel panel-default">
-        <div class="panel-heading">
-            <h3 class="panel-title">Filter Results</h3>
-        </div>
-        <div class="panel-body">
-            <form action="thankyou.php" method="post" id="filter_feedback_form" >
-                <div class="row">
-                    <div class="col-md-8 col-sm-8">
-                        Department
-                        <div class="checkbox">
-                            <label><input type="checkbox" name="category" value="">Shipping</label>
-                        </div>
-                        <div class="checkbox">
-                            <label><input type="checkbox" name="category" value="">Complaints</label>
-                        </div>
-                    </div>
-                </div>
-                <div class="row text-right results">
-                    <button class="btn btn-md" type="submit"><a href="">Show Results</a></button>
-                </div>
-            </form>
-        </div>
-    </div>
     <div >
         <table id="feedbacktbl" class="table table-hover table-condensed text-left">
             <thead>
@@ -72,6 +49,7 @@ $entry = $db->query($query);
                 <th>Subject</th>
                 <th>Message</th>
                 <th>Date</th>
+                <th>Delete</th>
             </tr>
             </thead>
             <tbody>
@@ -84,6 +62,17 @@ $entry = $db->query($query);
                     <td><?php echo $feedback['Subject']; ?></td>
                     <td><?php echo $feedback['Message']; ?></td>
                     <td><?php echo $feedback['Message_Date']; ?></td>
+                    <td>
+                        <form action="../Controller/delete_feedback.php" method="post"
+                              id="delete_account_form">
+                            <input type="hidden" name="Feedback_Id"
+                                   value="<?php echo $feedback['Feedback_Id']; ?>" />
+                            <button type="submit" class="delete btn btn-sm btn-default">
+                                <span class="glyphicon glyphicon-remove"></span>
+                            </button>
+
+                        </form>
+                    </td>
                 </tr>
             <?php endforeach; ?>
             </tbody>
