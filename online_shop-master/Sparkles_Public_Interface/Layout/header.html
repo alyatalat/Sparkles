@@ -68,14 +68,126 @@
         </div>
     </header>
 </div>
+
+<script>
+
+    $(document).on('keyup','#searchBox',function(e){
+        var key = e.keyCode;
+
+        if($('.searchlist').length && (key == 40 || key == 38)){
+
+            $listItems = $('.searchlist li');
+            $selected = $listItems.filter(".selected");
+
+
+            $listItems.removeClass('selected');
+
+            if ( key == 40 ) // Down key
+            {
+                if ( ! $selected.length || $selected.is(':last-child') ) {
+                    $current = $listItems.eq(0);
+                }
+                else {
+                    $current = $selected.next();
+                }
+            }
+            else if ( key == 38 ) // Up key
+            {
+                if ( ! $selected.length || $selected.is(':first-child') ) {
+                    $current = $listItems.last();
+                }
+                else {
+                    $current = $selected.prev();
+                }
+            }
+
+            $current.addClass('selected');
+            $("#searchBox").val($current.text());
+
+        }
+        else{
+
+            if ($(this).val().length==0) {
+
+
+                document.getElementById("livesearch").innerHTML="";
+                document.getElementById("livesearch").style.border="0px";
+                document.getElementById("livesearch").style.padding = "0px";
+                return;
+            }
+
+
+
+            if (window.XMLHttpRequest) {
+                // code for IE7+, Firefox, Chrome, Opera, Safari
+                xmlhttp=new XMLHttpRequest();
+            } else {  // code for IE6, IE5
+                xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+            }
+            xmlhttp.onreadystatechange=function() {
+                if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+                    document.getElementById("livesearch").innerHTML=xmlhttp.responseText;
+                    document.getElementById("livesearch").style.border="1px solid #A5ACB2";
+                    document.getElementById("livesearch").style.padding = "5px 10px";
+                }
+            }
+            xmlhttp.open("GET","livesearch.php?q="+$(this).val(),true);
+            xmlhttp.send();
+
+        }
+
+
+    });
+
+
+</script>
+
+<style>
+    #livesearch{
+        background-color: white;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .matchedwords{
+        padding: 5px;
+        cursor: pointer;
+    }
+
+    .matchedwords.selected{
+        background-color: #B5ACAC;
+    }
+
+    .matchedwords:hover {
+
+        padding: 5px;
+        cursor: pointer;
+        background-color: #B5ACAC;
+    }
+</style>
+
+
+<script>
+    function validateForm() {
+        var x = document.forms["searchForm"]["search"].value;
+        if (x == null || x == "") {
+            alert("Search Text must be filled out");
+            return false;
+        }
+    }
+</script>
+
+
 <div id="search_bar_container">
-    <form action="" method="post">
+    <form action="../Controller/checkMatch.php" method="post" id="searchForm" name="searchForm" onsubmit="return validateForm()">
         <div class="form-group">
-            <input placeholder="Search For ... " type="text" id="searchBox" name="search"  />
+            <input autocomplete="off" placeholder="Search For ... " type="text" id="searchBox" name="search" style="width:85%;" />
+
             <button type="submit" id="submitSearch" name="submitSearch" class="btn btn-link">
                 <img src="../Images/arrow-right.png" alt="submit image" id="arrw" />
             </button>
         </div>
+        <div id="livesearch"></div>
     </form>
 </div>
 <div id="mobile-menu" class="hidden-md hidden-lg">
@@ -106,3 +218,13 @@
     });
 
 </script>
+
+
+<script>
+    $(document).on('click','.matchedwords',function(){
+        document.getElementById("searchBox").value = $(this).text();
+        document.getElementById("searchForm").submit();
+    });
+
+</script>
+
