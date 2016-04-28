@@ -186,32 +186,31 @@
 
                         </p>
 
-
-
-                </div>
-
-                <form method="post" action="index.php" class="col-md-9 col-sm-8 col-xs-12 pull-right">
-                    <script
-                        src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-                        data-key="pk_test_hNOTamz7C1hySP4mJemYBbYp"
-                        data-amount="<?php echo ($subtotal*100)?>"
-                        data-name="Shopping on Sparkles"
-                        data-description="Total Amount : $<?php echo $subtotal;?>"
-                        data-locale="auto">
-                    </script>
                     <?php
                     if(!isset($discount)) {
-                         $subtotal=$subtotal;
+                        $discount=0;
+                        $subtotal = $subtotal-$discount;
 
                     }
                     else {
                         $subtotal=$subtotal-$discount;
                     }
                     ?>
-                    <input type="hidden" name="new_subtotal" value="<?php echo $subtotal; ?>">
-                    <input type="hidden" name="billing_address" value="<?php echo $bill_add[0]; ?>">
 
 
+                </div>
+<?php $subtotal_stripe = ($subtotal*100);?>
+                <form method="post" action="checkout_payment.php" class="col-md-9 col-sm-8 col-xs-12 pull-right">
+                    <script
+                        src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                        data-key="pk_test_hNOTamz7C1hySP4mJemYBbYp"
+                        data-amount="<?php echo $subtotal_stripe?>"
+                        data-name="Pay for Shopping Cart "
+                        data-description="Amount : <?php echo $subtotal?>"
+                        data-locale="auto">
+                    </script>
+
+                    <input type="hidden" name="new_subtotal" value="<?php echo $subtotal_stripe?>">
                     <input type="hidden" name="action" value="payment">
                 </form>
 
