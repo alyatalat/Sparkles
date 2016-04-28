@@ -6,10 +6,10 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 <!-- Optional theme -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-<link rel="stylesheet" href="../../Views/Layout/Style/admin.css" />
-<link rel="stylesheet" href="../../Scripts/Gift_Card.css"/>
+<link rel="stylesheet" href="../Views/Layout/Style/admin.css" />
+<link rel="stylesheet" href="../Scripts/Gift_Card.css"/>
 <?php
-require_once("Layout/admin_header.php");
+require_once("../Views/Layout/admin_header.php");
 ?>
 
 
@@ -24,12 +24,12 @@ delete_order($order_id);
 
 echo "The record has been deleted successfully";
 ?>
-<p><a href="admin_index.php">View Orders List</a></p>
+<p><a href="Index.php">View Orders List</a></p>
 
 
 
 </div>
 <?php
-require_once("Layout/admin_footer.php");
+require_once("../Views/Layout/admin_footer.php");
 ?>
 

@@ -19,11 +19,11 @@
             <div class="stepwizard-row setup-panel">
                 <div class="stepwizard-step">
                     <a href="#step-1" type="button" class="btn btn-primary btn-circle">1</a>
-                    <p>Confirm Order</p>
+                    <p>Shipping Details</p>
                 </div>
                 <div class="stepwizard-step">
                     <a href="#step-2" type="button" class="btn btn-default btn-circle" disabled="disabled">2</a>
-                    <p>Billing Address</p>
+                    <p>Confirm Order</p>
                 </div>
                 <div class="stepwizard-step">
                     <a href="#step-3" type="button" class="btn btn-default btn-circle" disabled="disabled">3</a>
@@ -38,7 +38,7 @@
                     <div class="col-md-12">
                         <h3>Change Billing Address</h3>
                         <div id="billingaddress" class="col-md-9 col-sm-6 col-xs-12">
-                            <h2>Billing Address</h2>
+                            <h2>Shipping Address</h2>
 
                             <?php
                             $cust_id=1;
@@ -61,6 +61,7 @@
                                         <input type="submit" name="edit" value="Save">
 
                                     </form>
+
                                     <?php
 
                                 }
@@ -69,6 +70,8 @@
 
 
                             </form>
+
+                            
                         </div>
                         <button class="btn btn-primary nextBtn btn-lg pull-right" type="button" >Next</button>
                     </div>
@@ -157,9 +160,6 @@
         <div class="col-xs-6">
             <div class="col-md-12">
 
-                <div class="col-md-10 col-sm-8 col-xs-12 pull-right">
-                    <?php include('../../PromoCode/Views/Index.php');?>
-                </div>
 
                 <div class="col-md-10 col-sm-8 col-xs-12 pull-right">
 

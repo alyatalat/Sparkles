@@ -119,7 +119,7 @@ default:
                     <div class="nav">
                         <ul class="breadcrumb">
                             <li><a href="HomeIndex.php">Home</a></li>
-                            <li><a href="">Shopping Cart</a></li>
+                            <li><a href=".">Shopping Cart</a></li>
 
                         </ul>
                     </div>
@@ -199,7 +199,7 @@ default:
     <div class="col-md-6 col-sm-6 col-xs-12 pull-left">
         <?php if (cart_product_count() > 0) : ?>
             <p>
-                <a href="?action=clear">Go Back</a>
+                <a href="../../HomeIndex.php">Go Back</a>
             </p>
         <?php endif; ?>
         </div>
@@ -219,6 +219,10 @@ default:
 
 
     </div>
+<div class="col-md-10 col-sm-8 col-xs-12 pull-right">
+    <?php include('../../PromoCode/Views/Index.php');?>
+</div>
+
             </div>
 
 
