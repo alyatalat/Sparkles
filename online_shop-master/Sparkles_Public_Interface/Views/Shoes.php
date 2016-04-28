@@ -38,6 +38,29 @@ else {
 
 }
 
+
+
+$query = "SELECT * FROM image_slider
+            WHERE image_category='SHOES'
+            ORDER BY image_order";
+$statement = $db->prepare($query);
+$statement->execute();
+$images = $statement->fetchAll();
+
+
+$imageArray = array();
+
+foreach($images as $image){
+
+    $pos = strpos($image['image_file'], "Images");
+    $pos = substr($image['image_file'], $pos+7);
+    $pos = "../../Soo-Ah_Admin_Features/ImageSlider/Views/Images/" . $pos;
+    $imageArray[] = $pos;
+}
+
+
+
+
 ?>
 <div class="container-fluid">
     <div class="row">
@@ -48,12 +71,63 @@ else {
 </div>
 
 
+
+<style>
+
+    .carousel-control.left, .carousel-control.right{
+        background-image: none !important;
+    }
+</style>
+
+
+
 <!-- main -->
-<div class="container-fluid">
-    <div class="row shoes-header-image">
-        <h2 class="category-title"> Shop Shoes </h2>
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <?php if(count($imageArray) > 1) { ?>
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <?php } ?>
+        <?php
+        for($i = 1; $i < count($imageArray); $i++) {
+            ?>
+            <li data-target="#carousel-example-generic" data-slide-to="<?php echo $i; ?>"></li>
+        <?php } ?>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <img src="<?php echo $imageArray[0];?>" id="firstImage" style="width:100%; height: 200px;">
+        </div>
+        <?php
+
+        for($i = 1; $i < count($imageArray); $i++) {
+
+            ?>
+
+            <div class="item">
+                <img src="<?php echo $imageArray[$i]; ?>" style="width:100%; height: 200px;"  >
+            </div>
+        <?php } ?>
+
     </div>
+
+    <!-- Controls -->
+    <?php if(count($imageArray) > 1) { ?>
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    <?php } ?>
 </div>
+
+
+
 
 <div id="wrapper" class="container-fluid">
     <div class="row">
