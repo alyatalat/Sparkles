@@ -32,6 +32,6 @@ if (empty($custid) || empty($orderdate) || empty($shipaddress) ||empty($shipamou
 
     addOrder($custid,$orderdate,$shipamount, $shipaddress);
     // Display the Orders List page
-    header('location: Index.php');
+    header('location: admin_index.php');
 }
 ?>

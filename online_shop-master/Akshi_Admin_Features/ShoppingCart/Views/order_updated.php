@@ -36,7 +36,7 @@ if (empty($cust_id) || empty($order_date) || empty($ship_address)|| empty($ship_
 
 
     // Display the Product List page
-    header('location: Index.php');
+    header('location: admin_index.php');
     unset($_SESSION['Order_id']);
 }
 ?>

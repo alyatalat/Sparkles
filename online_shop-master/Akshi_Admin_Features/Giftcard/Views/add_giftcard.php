@@ -98,7 +98,7 @@ if(isset($_GET['error']))
     <input type="submit" value="Add"/> <br/>
 </form>
 
-        <p><a href="Index.php">View Gift Card List</a></p>
+        <p><a href="admin_index.php">View Gift Card List</a></p>
     </div>
 </div><!-- end page -->
 </div>
