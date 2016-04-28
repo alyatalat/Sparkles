@@ -26,7 +26,6 @@ elseif(isset($_GET['id'])) {
 $sql = "SELECT * FROM products WHERE Product_Id = '$id'";
 $result = $db->query($sql);
 $product = $result->fetch();
-var_dump($product);
 
 
 ?>

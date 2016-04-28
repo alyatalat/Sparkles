@@ -36,8 +36,8 @@ $file_name = $_FILES['fileToUpload']['name'];
 $file_tmp_name = $_FILES['fileToUpload']['tmp_name'];
 $file_type = $_FILES['fileToUpload']['type']; //returns the mimetype
 $allowed = array("image/jpeg", "image/jpg", "image/png");
-var_dump($file_type);
-var_dump(!in_array($file_type, $allowed));
+/*var_dump($file_type);
+var_dump(!in_array($file_type, $allowed));*/
 if ($file_type != ""){
     if(!in_array($file_type, $allowed)) {
         $error .= '<br/>Only jpg and png files are allowed.<br/>';
