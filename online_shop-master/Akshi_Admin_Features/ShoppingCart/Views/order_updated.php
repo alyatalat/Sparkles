@@ -34,9 +34,9 @@ if (empty($cust_id) || empty($order_date) || empty($ship_address)|| empty($ship_
     updateOrder($order_id,$cust_id, $order_date,$ship_amount, $ship_address);
 
 
-
+echo ("succesfully updated");
     // Display the Product List page
-    header('location: admin_index.php');
-    unset($_SESSION['Order_id']);
+//    header('location: admin_index.php');
+  //  unset($_SESSION['Order_id']);
 }
 ?>

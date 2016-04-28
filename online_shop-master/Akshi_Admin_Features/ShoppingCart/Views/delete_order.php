@@ -1,3 +1,5 @@
+
+
 <script
     src="https://code.jquery.com/jquery-2.2.2.min.js"
     integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI="
@@ -9,8 +11,9 @@
 <link rel="stylesheet" href="../Views/Layout/Style/admin.css" />
 <link rel="stylesheet" href="../Scripts/Gift_Card.css"/>
 <?php
-require_once("../Views/Layout/admin_header.php");
+require_once("Layout/admin_header.php");
 ?>
+
 
 
 <?php
@@ -24,12 +27,13 @@ delete_order($order_id);
 
 echo "The record has been deleted successfully";
 ?>
-<p><a href="Index.php">View Orders List</a></p>
+<p><a href="admin_index.php">View Orders List</a></p>
 
 
 
 </div>
+
 <?php
-require_once("../Views/Layout/admin_footer.php");
+require_once("Layout/admin_footer.php");
 ?>
 

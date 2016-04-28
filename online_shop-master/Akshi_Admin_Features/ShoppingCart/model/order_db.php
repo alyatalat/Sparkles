@@ -126,7 +126,7 @@ function updateOrder($order_id,$cust_id, $order_date, $shipamount, $shipaddress)
                 Ship_Amount ='$shipamount',
                 Ship_Address='$shipaddress'
                 WHERE Order_Id='$order_id'";
-var_dump($query);
+
     $db->exec($query);
 }
 

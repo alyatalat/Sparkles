@@ -58,17 +58,12 @@ $orders = getall_orders();
 
                 </td>
 
-                <td>
-                    <!--when the user clicks on details the id is sent as a hidden field-->
-                    <form action="details_order.php" method="post" id="details_order">
-                        <input type="hidden" name="Order_Id"
-                               value="<?php echo $gc['Order_Id']; ?>" />
-                        <input type="submit" value="Details" />
-                    </form>
-
-                </td>
+                
             </tr>
         <?php endforeach; ?>
     </table>
     <p><a href="add_order.php">Add Order</a></p>
-<?php include "Layout/admin_footer.php";
+
+    <?php
+    require_once("Layout/admin_footer.php");
+    ?>

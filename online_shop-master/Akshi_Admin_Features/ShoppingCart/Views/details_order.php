@@ -44,4 +44,7 @@ $orders = get_order_items($order_id);
         <?php endforeach; ?>
     </table>
     <p><a href="admin_index.php">Back to Orders List</a></p>
-<?php include "Layout/admin_footer.php";
+
+    <?php
+    require_once("Layout/admin_footer.php");
+    ?>

@@ -63,7 +63,7 @@ if (isset($_POST['action'])) {
             <input type="submit" value="Add"/> <br/>
         </form>
 
-        <p><a href="Index.php">View Orders List</a></p>
+        <p><a href="admin_index.php">View Orders List</a></p>
     </div>
 </div><!-- end page -->
 <?php

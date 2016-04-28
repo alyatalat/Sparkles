@@ -1,3 +1,5 @@
+
+
 <script
     src="https://code.jquery.com/jquery-2.2.2.min.js"
     integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI="
@@ -9,7 +11,7 @@
 <link rel="stylesheet" href="../Views/Layout/Style/admin.css" />
 <link rel="stylesheet" href="../Scripts/Gift_Card.css"/>
 <?php
-require_once("../Views/Layout/admin_header.php");
+require_once("Layout/admin_header.php");
 ?>
 
 <?php
@@ -23,7 +25,7 @@ $shipaddress = $_GET['shipaddress'];
 // Validate inputs
 if (empty($custid) || empty($orderdate) || empty($shipaddress) ||empty($shipamount) ) {
     $error = "All the fields are required";
-    header("location: add_order.php?error=$error");
+    echo ("some error");
 
 } else {
     // If valid, add the product to the database
@@ -32,6 +34,6 @@ if (empty($custid) || empty($orderdate) || empty($shipaddress) ||empty($shipamou
 
     addOrder($custid,$orderdate,$shipamount, $shipaddress);
     // Display the Orders List page
-    header('location: admin_index.php');
+    echo("successfully added");
 }
 ?>
