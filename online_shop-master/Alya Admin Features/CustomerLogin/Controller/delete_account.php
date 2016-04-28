@@ -1,6 +1,6 @@
 <?php
 // Get ID
-$customer_id = $_POST['customer_id'];
+$customer_id = $_POST['Customer_Id'];
 
 // Delete the customer from the database
 require_once('database.php');
