@@ -14,26 +14,37 @@
 require_once("Layout/admin_header.php");
 ?>
 
-
-
 <?php
-
-$order_id = $_POST['Order_Id'];
-
-// Delete the product from the database
 require_once('../model/database.php');
 require_once('../model/order_db.php');
-delete_order($order_id);
+$order_id=$_POST['Order_Id'];
+$db = Database::getDB();
+$orders = get_order_items($order_id);
 
-echo "The record has been deleted successfully";
+
 ?>
-<p><a href="admin_index.php">View Orders List</a></p>
+<!--include the table with details of the gift cards like title, description and image source-->
+<div id="main">
+    <h1 id="heading">Order Item Details</h1>
+    <table id="table-view"><tr>
+            <th>Order Id</th>
+            <th>Product Id</th>
+            <th>Price</th>
+            <th>Quantity</th>
+        </tr>
+        <?php foreach ($orders as $gc) :?>
+            <tr>
+                <td><?php echo $gc['Order_Id'];?></td>
+                <td><?php echo $gc['Product_Id'];?></td>
+                <td><?php echo $gc['Item_Price'];?></td>
+                <td><?php echo $gc['Quantity'];?></td>
 
 
+            </tr>
+        <?php endforeach; ?>
+    </table>
+    <p><a href="admin_index.php">Back to Orders List</a></p>
 
-</div>
-
-<?php
-require_once("Layout/admin_footer.php");
-?>
-
+    <?php
+    require_once("Layout/admin_footer.php");
+    ?>

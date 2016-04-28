@@ -5,31 +5,31 @@
 <!-- the head section -->
 <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../../Scripts/Gift_Card.css">
+    <link rel="stylesheet" href="../Scripts/Gift_Card.css">
 
 
 </head>
 
 <!-- the body section -->
 <body>
-    <div id="page">
-        <div id="header">
-            <h1> Manage Gift Card</h1>
-        </div>
-<!--        display error-->
+<div id="page">
+    <div id="header">
+        <h1> Manage Gift Card</h1>
+    </div>
+    <!--        display error-->
 
-        <div id="main">
-            <h2 class="top">Error</h2>
-            <p><?php echo $error; ?></p>
-        </div>
+    <div id="main">
+        <h2 class="top">Error</h2>
+        <p><?php echo $error; ?></p>
+    </div>
 
-        <div id="footer">
-            <p class="copyright">
-                &copy; <?php echo date("Y"); ?> Sparkles Shop, Inc.
-            </p>
-        </div>
+    <div id="footer">
+        <p class="copyright">
+            &copy; <?php echo date("Y"); ?> Sparkles Shop, Inc.
+        </p>
+    </div>
 
-    </div><!-- end page -->
-    <?php include('../view/footer.php');?>
+</div><!-- end page -->
+<?php include('../view/footer.php');?>
 </body>
 </html>

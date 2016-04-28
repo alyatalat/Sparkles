@@ -163,11 +163,11 @@
 
             </li>
             <li class="menu-item giftcard selectedItem">
-                <a href="../../../Akshi_Admin_Features/Giftcard/Views/admin_index.php" class="link"><span class="glyphicon glyphicon-gift" aria-hidden="true"></span>
+                <a href="../../Giftcard/Views/admin_index.php" class="link"><span class="glyphicon glyphicon-gift" aria-hidden="true"></span>
                     <span class="admin_list">Giftcard</span></a>
 
                 <div class="mobile_menu">
-                    <a href="../../../Akshi_Admin_Features/Giftcard/Views/admin_index.php">Giftcard</a>
+                    <a href="../../Giftcard/Views/admin_index.php">Giftcard</a>
                 </div>
 
             </li>

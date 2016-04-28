@@ -7,6 +7,10 @@
 <!-- Optional theme -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 <link rel="stylesheet" href="Layout/Style/admin.css" />
+<<<<<<< HEAD:online_shop-master/Akshi_Admin_Features/ManageGiftCard/Views/admin_index.php
+=======
+<link rel="stylesheet" href="../Scripts/Gift_Card.css"/>
+>>>>>>> origin/master:online_shop-master/Akshi_Admin_Features/Giftcard/Views/admin_index.php
 <?php
 require_once("Layout/admin_header.php");
 ?>
@@ -15,7 +19,7 @@ require_once("Layout/admin_header.php");
 
 <div id="main">
     <h1 id="heading">Manage Gift Cards</h1>
-    <table id="table-view"><tr>
+    <table class="table table-hover table-condensed text-left" ><tr>
             <th>Title</th>
             <th>Description</th>
             <th>Image Source</th>

@@ -38,7 +38,8 @@ $promocode=PromoCodeDB::getPromoCode();
 <!--include the table with details of the gift cards like title, description and image source-->
     <div id="main">
     <h1 id="heading">Manage Promo Code</h1>
-<table id="table-view"><tr>
+        <table class="table table-hover table-condensed text-left">
+            <tr>
     <th>Code</th>
     <th>Exp_Date</th>
     <th>Amount</th>
