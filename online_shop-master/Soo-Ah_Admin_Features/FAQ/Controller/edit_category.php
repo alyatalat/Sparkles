@@ -2,6 +2,9 @@
 
     require('database.php');
 
+$db = Database::getDB();
+
+
     $categoryid = $_POST['faq_id'];
     $order = $_POST['sort_order'];
     if(empty($_POST['category_name'])){

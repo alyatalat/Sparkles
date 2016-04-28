@@ -3,14 +3,15 @@
 
 <?php
 require_once('Layout/admin_header.php');
+require_once ('../Models/FAQObject.php');
 include('../Controller/database.php');
 
-// Get name for all the categories
-$query = "SELECT * FROM faq_category ORDER BY faq_category_order";
-$statement = $db->query($query);
-$statement->execute();
-$categories = $statement->fetchAll();
-$statement->closeCursor();
+$db = Database::getDB();
+
+$tempo = new FAQObject();
+$categories = $tempo->getCategories();
+
+
 ?>
 <link rel="stylesheet" type="text/css" href="Layout/Style/faq_admin.css" />
 <script>
@@ -73,15 +74,8 @@ $statement->closeCursor();
                 }
             }
 
-            $query = "INSERT INTO faq_category
-                            (faq_category_name, faq_category_order)
-                            VALUES
-                            (:name, :order)";
-            $statement = $db->prepare($query);
-            $statement->bindValue(':name', $_POST['category_name']);
-            $statement->bindValue(':order', $sort_order_input);
-            $statement->execute();
-            $statement->closeCursor();
+            $tempo->addCategories($_POST['category_name'],$sort_order_input)
+
             ?>
            <script><?php echo("location.href = '"."faq_admin.php"."';");?></script>
 

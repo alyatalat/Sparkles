@@ -1,4 +1,7 @@
-<?php require_once("database.php");
+<?php
+require_once("database.php");
+
+$db = Database::getDB();
 
             $category_order = $_GET['faq_order'];
             $category_id = $_GET['faq_id'];

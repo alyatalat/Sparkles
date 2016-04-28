@@ -4,17 +4,14 @@
 <?php
 require_once('Layout/admin_header.php');
 include('../Controller/database.php');
+require_once ('../Models/FAQObject.php');
 
-
+$db = Database::getDB();
 $categoryid = $_GET['category_id'];
 
-// Get name for all the categories
-$query = "SELECT * FROM faq_question WHERE faq_question_category = :categoryid ORDER BY faq_question_order";
-$statement = $db->prepare($query);
-$statement->bindValue(':categoryid', $categoryid);
-$statement->execute();
-$questions = $statement->fetchAll();
-$statement->closeCursor();
+$tempo = new FAQObject();
+$questions = $tempo->getQuestions($categoryid);
+
 ?>
     <link rel="stylesheet" type="text/css" href="Layout/Style/faq_admin.css" />
     <script>
@@ -84,17 +81,10 @@ if(isset($_POST['submit'])){
             }
         }
 
-        $query = "INSERT INTO faq_question
-                            (faq_question_question,faq_question_answer,	faq_question_category, faq_question_order)
-                            VALUES
-                            (:question,:answer,:categoryid ,:order)";
-        $statement = $db->prepare($query);
-        $statement->bindValue(':question', $_POST['question']);
-        $statement->bindValue(':answer', $_POST['answer']);
-        $statement->bindValue(':categoryid', $categoryid);
-        $statement->bindValue(':order', $sort_order_input);
-        $statement->execute();
-        $statement->closeCursor();
+
+        $tempo->insertQuestions($_POST['question'],$_POST['answer'], $categoryid, $sort_order_input )
+
+
         ?>
         <script><?php echo("location.href = '"."edit_faq_category.php?faq_id=" . $categoryid ."';");?></script>
 

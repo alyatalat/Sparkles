@@ -4,6 +4,8 @@
 <?php
 require_once('Layout/admin_header.php');
 include('../Controller/database.php');
+require_once ('../Models/FAQObject.php');
+
 
 if(isset($_GET['err_msg1'])) {
     $errmsg1 = $_GET['err_msg1'];
@@ -20,18 +22,13 @@ else{
 
 $faqid = $_GET['faq_id'];
 
+$db = Database::getDB();
 
+$tempo = new FAQObject();
 
-$query = "SELECT * FROM faq_question WHERE faq_question_id = :faqid";
-$statement = $db->prepare($query);
-$statement -> bindValue(':faqid', $faqid);
-$statement->execute();
-$question = $statement->fetch();
-$statement->closeCursor();
+$question = $tempo->getQuestion($faqid);
 
 $categoryid = $question['faq_question_category'];
-
-
 
 
 ?>
@@ -74,12 +71,8 @@ $categoryid = $question['faq_question_category'];
 
 
             <?php
-            $query = "SELECT * FROM faq_question WHERE faq_question_category = :categoryid ORDER BY faq_question_order";
-            $statement = $db->prepare($query);
-            $statement -> bindValue(':categoryid', $categoryid);
-            $statement->execute();
-            $questions = $statement->fetchAll();
-            $statement->closeCursor();
+
+                 $questions = $tempo->getQuestions($categoryid);
 
             ?>
 

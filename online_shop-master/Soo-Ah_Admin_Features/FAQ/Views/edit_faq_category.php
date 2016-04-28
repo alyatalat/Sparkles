@@ -4,6 +4,8 @@
 <?php
 require_once('Layout/admin_header.php');
 include('../Controller/database.php');
+require_once ('../Models/FAQObject.php');
+
 
 if(!isset($_GET['err_msg'])) {
     $errmsg = "";
@@ -12,17 +14,11 @@ else{
     $errmsg = $_GET['err_msg'];
 }
 
-// Get name for all the categories
-    $query = "SELECT * FROM faq_category WHERE faq_category_id = :categoryid";
-    $statement = $db->prepare($query);
-    $statement->bindValue(':categoryid', $_GET['faq_id']);
-    $statement->execute();
-    $category = $statement->fetch();
-    $statement->closeCursor();
+$db = Database::getDB();
 
+$tempo = new FAQObject();
 
-
-
+$category = $tempo->getCategory($_GET['faq_id']);
 
 ?>
 <link rel="stylesheet" type="text/css" href="Layout/Style/faq_admin.css" />
@@ -52,12 +48,8 @@ else{
 
 
         <?php
-            $query = "SELECT * FROM faq_category ORDER BY faq_category_order";
-            $statement = $db->query($query);
-            $statement->execute();
-            $categories = $statement->fetchAll();
-            $statement->closeCursor();
 
+            $categories = $tempo->getCategories();
         ?>
 
         <tr>
@@ -96,13 +88,7 @@ else{
 
 
     <?php
-    $query = "SELECT * FROM faq_question WHERE 	faq_question_category=:categoryid ORDER BY faq_question_order";
-    $statement = $db->prepare($query);
-    $statement->bindValue(':categoryid', $_GET['faq_id']);
-    $statement->execute();
-    $questions = $statement->fetchAll();
-    $statement->closeCursor();
-
+    $questions = $tempo->getQuestions($_GET['faq_id']);
     ?>
 
 

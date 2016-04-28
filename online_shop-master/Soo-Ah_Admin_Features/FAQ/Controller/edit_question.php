@@ -22,7 +22,7 @@ elseif(empty($_POST['answer'])){
 else{
 }
 
-
+$db = Database::getDB();
 
 $question = $_POST['question'];
 $answer = $_POST['answer'];

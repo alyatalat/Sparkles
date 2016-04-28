@@ -4,13 +4,14 @@
 <?php
     require_once('Layout/admin_header.php');
     include('../Controller/database.php');
+require_once ('../Models/FAQObject.php');
 
-    // Get name for all the categories
-    $query = "SELECT * FROM faq_category ORDER BY faq_category_order";
-    $statement = $db->query($query);
-    $statement->execute();
-    $categories = $statement->fetchAll();
-    $statement->closeCursor();
+
+$db = Database::getDB();
+$tempo = new FAQObject();
+
+$categories = $tempo->getCategories();
+
 
 ?>
 <link rel="stylesheet" type="text/css" href="Layout/Style/faq_admin.css" />
