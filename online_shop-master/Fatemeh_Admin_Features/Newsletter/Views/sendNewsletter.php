@@ -26,7 +26,7 @@ if(isset($_POST['send'])){
 <input type='hidden' name='id' value='$id' />
 <input type='hidden' name='code' value='$securityCode'/><input type='submit' name='unsubscribe' value='Click for Unsubscribing' /></form>";
 
-        $newsletter="</div>".$unsubscribe."</body></html>";
+        $newsletter.="</div>".$unsubscribe."</body></html>";
        echo  sendenailgmail($email,$newsletter);
     }
 

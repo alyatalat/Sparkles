@@ -27,9 +27,9 @@ class NewsletterDb {
         $row = $result->fetch();
         $newsletter = new Newsletter(
             $row['Title'],
-            $row["Body"],
-            $row["DateReleased"]
+            $row["Body"]
         );
+        $newsletter->setDateReleased($row["DateReleased"]);
         $newsletter->setID($row["Newsletter_Id"]);
         return $newsletter;
     }

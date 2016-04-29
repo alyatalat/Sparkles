@@ -15,6 +15,24 @@ if(isset($_POST['makeNewsletter'])){
         header("location: addNewsletter.php?title=$title&body=$body");
 }
 ?>
+<script src='//cdn.tinymce.com/4/tinymce.min.js'></script>
+<script>
+    tinymce.init({
+        selector: 'textarea',
+        width:1000,
+        height: 400,
+        plugins: [
+            'advlist autolink lists link image charmap print preview anchor',
+            'searchreplace visualblocks code fullscreen',
+            'insertdatetime media table contextmenu paste code'
+        ],
+        toolbar: 'insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image',
+        content_css: [
+            '//fast.fonts.net/cssapi/e6dc9b99-64fe-4292-ad98-6974f93cd2a2.css',
+            '//www.tinymce.com/css/codepen.min.css'
+        ]
+    });
+</script>
 <script
     src="https://code.jquery.com/jquery-2.2.2.min.js"
     integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI="
@@ -38,13 +56,13 @@ require_once("Layout/admin_header.php");
             </div>
         </div>
 
-        <div class="form-group">
+        <!--<div class="form-group">
             <label class="col-sm-2">Newsletter Content:</label>
-            <div class="col-sm-3">
-                <textarea id="body" name="body"  class="form-control"  value="<?php echo $body ?>"></textarea>
+            <!--<div class="col-sm-3">-->
+                <textarea id="body" name="body"  value="<?php echo $body ?>"></textarea>
 
-            </div>
-        </div>
+            <!--</div>-->
+        <!--</div>-->
 
         <div class="form-group">
             <label class="col-sm-2">&nbsp;</label>
