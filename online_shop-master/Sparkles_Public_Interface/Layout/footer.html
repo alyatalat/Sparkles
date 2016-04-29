@@ -100,12 +100,39 @@
     <p>&copy; 2016 - <b>Sparkles</b> by Team Echo</p>
 </div>
 <!-- Live Chat -->
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('#chat').submit(function(event){
+            event.preventDefault();
+            var name = $('#name').val();
+            var question=$('#question').val();
+            $.getJSON('../Views/OnlineChat/Views/validateChat.php',{name : name,question:question}, function (data) {
+                if(data===""){
+                    // alert("test");
+                    $('#chat').unbind('submit');
+                }
+                else{
+                    $('#chatMessage').html(data);
+                }
+            });
+        });
+    });
+</script>
 <div id="livechat">
     <div class="livechatTitle">
         <p>Live Chat!<span id="chatArrow"> &#9650;</span></p>
     </div>
     <div id="livechatContent">
-
+        <form class="form-horizontal" action="../Views/OnlineChat/Views/addChat.php" method="post" id="chat">
+            <label for="name">Name:</label>
+            <input  class="form-control" type="text" id="name" name="name"/><br/>
+            <label for="question">Question:</label>
+            <textarea  class="form-control" id="question" rows="6" name="question"></textarea><br/>
+            <input type="submit" id="Send" name="Send" class="btn btn-default" value="Start Chat"/>
+            <br/>
+            <span id="chatMessage"></span>
+        </form>
     </div>
 </div>
 <!-- Latest compiled and minified JavaScript -->

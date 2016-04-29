@@ -55,3 +55,7 @@ class DealDB {
         return $result->fetchAll();
     }
 }
+/*require_once('/DbConnetcion.php');
+require_once('/DealProduct.php');
+$products=DealDB::getAllDeals();
+var_dump($products);*/
